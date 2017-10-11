@@ -1,16 +1,22 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Hakkımda
+subtitle: <i class="fa fa-hand-peace-o fa-2x"></i> Hi there
+permalink: hakkimda.html
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Selam ben Sinan.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
 
-What else do you need?
+## İlgi Alanlarım
+Genellikle aşağıdaki konular ile ilgili içerikler okuyacaksınız.
 
-### my history
+- Python3
+- Php & Behat
+- Linux
+- Kindle
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+
+## İletişim
+
+Sayfanın altında bulunan bağlantıları kullanarak benimle iletişime geçebilirsiniz.
