@@ -21,7 +21,7 @@ layout: base
 
       {% if page.tags.size > 0 %}
         <div class="blog-tags">
-          Tags:
+          Etiketler:
           {% if site.link-tags %}
           {% for tag in page.tags %}
             <a href="/tag/{{ tag }}">{{ tag }}</a>
@@ -29,8 +29,26 @@ layout: base
           {% else %}
             {{ page.tags | join: ", " }}
           {% endif %}
+
+          <!-- Kategori -->
+          {% if page.categories.size > 0 %}
+          <span style="float:right">
+              Kategoriler:
+              {% if site.categories %}
+              {% for cat in page.categories %}
+                <a href="/{{ cat }}">{{ cat }}</a>
+              {% endfor %}
+              {% else %}
+                {{ page.categories | join: ", " }}
+              {% endif %}
+          {% endif %}
+        </span>
         </div>
       {% endif %}
+
+
+
+
 
       {% if page.social-share %}
         {% include social-share.html %}
@@ -39,12 +57,12 @@ layout: base
       <ul class="pager blog-pager">
         {% if page.previous.url %}
         <li class="previous">
-          <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+          <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Önceki Yazı</a>
         </li>
         {% endif %}
         {% if page.next.url %}
         <li class="next">
-          <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+          <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Sonraki Yazı &rarr;</a>
         </li>
         {% endif %}
       </ul>

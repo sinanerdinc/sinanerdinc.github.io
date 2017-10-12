@@ -3,6 +3,8 @@ layout: post
 title: Medium Türkçe kapandı
 image: /img/2017/medium-logo.png
 tags: [medium, blog]
+categories:
+    - "teknoloji"
 ---
 
 Medium, 2012 yılında hayatımıza girdiğinden beri sürekli popülerliğini artıran bir kaynak oldu, yeni bir yazma ve okuma deneyimi sunan, reklamsız yapısı ile adeta dijital yayının kaynağı haline geldi. Çünkü mobilde bile keyifli bir okuma tecrübesi veriyordu, birbirinden farklı binlerce insanın anlatacak yüzlerce hikayesi vardı, herhangi bir maddi kazanç beklemeden paylaşılan o hikayeleri okumak hepimize keyif veriyordu. Böyle olunca da ülkemizdeki internet kullanıcıları da Medium’u çok sevdi, Medium da bu sevginin karşılığı olarak belki de, Türkçe bir kanal açtı ve benim de içinde bulunduğum, popüler içeriklerin sahiplerine de Medim Türkçe kanalında yazarlık vererek güzel bir içerik havuzu oluşturmuştu. Evet geçmiş zaman eki kullandım, çünkü bu oluşturduğu topluluğu 3 gün önce kapatma kararı aldı Medium.

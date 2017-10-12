@@ -4,6 +4,8 @@ title: Amazon Kindle’da Reklamları (Special Offers) Kaldırmak
 image: /img/2017/amazon-kindle.jpg
 tags: [kindle, amazon, free]
 date: 2017-09-08
+categories:
+    - "teknoloji"
 ---
 
 2014 yılından beri Amazon Kindle Paperwhite kullanıcısıyım. Tüm arkadaşlarıma da konusu açılınca tavsiye ediyor hatta neredeyse pazarlamasını ben yapıyorum.
