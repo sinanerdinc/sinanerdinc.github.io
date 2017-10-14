@@ -1,5 +1,6 @@
 ---
 layout: post
+published: true
 title: Amazon Kindle’da Reklamları (Special Offers) Kaldırmak
 subtitle: Artık Kindle Reklamsız!
 image: /img/2017/amazon-kindle.jpg
