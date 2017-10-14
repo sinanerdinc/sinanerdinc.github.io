@@ -29,7 +29,7 @@
 
   {% if layout.common-googlefonts %}
     {% for font in layout.common-googlefonts %}
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}&amp;subset=latin-ext" rel="stylesheet" />
     {% endfor %}
   {% endif %}
 
@@ -88,7 +88,7 @@
   {% elsif site.avatar %}
   <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
   {% endif %}
-  
+
 
   <!-- Twitter summary cards -->
   <meta name="twitter:card" content="summary" />
