@@ -2,6 +2,13 @@
 layout: post
 title: Test markdown
 subtitle: Each post also has a subtitle
+bigimg: /img/path.jpg
+image: /img/2017/amazon-kindle.jpg
+tags: [kindle, amazon, free]
+date: 2020-09-08
+categories:
+    - "teknoloji"
+    - "python"
 ---
 
 You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.

@@ -11,10 +11,11 @@ Selam ben Sinan.
 ## İlgi Alanlarım
 Genellikle aşağıdaki konular ile ilgili içerikler okuyacaksınız.
 
-- Python3
+- Python
 - Php & Behat
 - Linux
-- Kindle
+- Eticaret
+- Teknoloji
 
 
 ## İletişim
