@@ -8,10 +8,14 @@ date: 2017-10-14
 categories:
     - "diger"
 ---
+Dışardan yemek yemeyi çok sevmesem de bazen zorunda kalıyoruz. Vaktimiz olmuyor, özellikle cuma akşamları şehir dışına çıkma planınız var ise, hızlıca yemeği aradan çıkartıp diğer işlere kafa patlatmak fena olmuyor.
 
-13 Ekim Cuma günü iş yerinden saat 18.40 gibi ayrıldım. Ayrılmadan önce de ben eve vardığımda yiyebilmek üzere **Magic Akademi** 'den   bir sipariş verdim. Siparişi verdiğim saat ise 18.25.
+Yine bir cuma günüydü, (13 Ekim Cuma) iş yerinden saat 18.40 gibi ayrıldım. Ayrılmadan önce de eve vardığımda yiyebilmek üzere lezzetini bildiğim **Magic Akademi** 'den   bir sipariş verdim. Siparişi verdiğim saat ise 18.25.
 
-Tahminlerime göre 19.00 - 19.10 arası siparişimin gelmesi gerekiyor. Planım eve geldiğimde yemeğin de gelmesi. Saat 19.20 olduğunda yemek sepetine telefon ettim. Restoran ile görüştüklerini ve siparişimin kuryede olduğunu iletti. Teşekkür ettim ve kapattım.
+{: .box-note}
+**Zamanı olmayan için özet:** Yemek sepeti üzerinden Magic Akademi restoranından verdiğim sipariş için  , sadece **kurye** ile ilgili yaşadığım olumsuz bir deneyim içerir.
+
+Tahminlerime göre 19.00 - 19.10 arası siparişimin gelmesi gerekiyor. Planım eve geldiğimde yemeğin de gelmesi. Saat 19.20 olduğunda, gelen giden olmadığından yemek sepetine telefon ettim. Restoran ile görüştüklerini ve siparişimin kuryede olduğunu iletti. Teşekkür ettim ve kapattım.
 
 Saat 19.32'de kurye telefon etti. Özet olarak aşağıdaki gibi bir sohbet geçti aramızda.
 
@@ -37,12 +41,13 @@ Belediye girişinde bakınıyorum kimse yok. Arkadaşı arıyorum nerdesiniz diy
 - ***Ben:*** Hangi belediyenin önündesiniz.
 - ***Kurye:*** XXX Belediyesi.
 - ***Ben:*** Tamam doğru yer, kocaman giriş yazan merdivenin olduğu yerdeyim sizi göremiyorum.
+- ***Kurye:*** Abi ben nerdeyim biliyor musun? ...
 
 2 - 3 dakikalık bir konuşmadan sonra birbirimize kavuştuk. Yemeğimi alıp arabamla evime döndüm.
 
 ## Şikayetim
-Mahalle arasındaki bir yerden sipariş verdiğinizde kurye tabiri caiz ise karış karış bilir sokakları ve adres problemi çekmezsiniz.
+Mahalle arasındaki bir yerden sipariş verdiğinizde kurye tabiri caiz ise karış karış bilir sokakları ve adres problemi çekmezsiniz. Local restoranlar bu konuda sıkıntı çekmezler.
 
-Farklı mahalle ve muhitlere sipariş veriyorsanız, kuryeleriniz de sürekli değişiyor ise, o arkadaşın kullanabileceği, internete giren, beni şuraya götür dediğinde götürecek bir cihazı cebine sokuşturmanız gerekiyor.
+Farklı mahalle ve semtlere sipariş teslim ediyorsanız, kuryeleriniz de sürekli yenileri ile değişiyor ise, o arkadaşın kullanabileceği, internete giren, beni şuraya götür dediğinde götürecek bir cihazı ( içinde yüklü bir harita + gps olsa yeterli. ) cebine sokuşturmanız gerekiyor.
 
-Konunun Yemek Sepeti ile direkt ilgisi olmasa da, anlaşma yapacağı restoranlarda kurye kalitesi, teknik donanımı konusunda bazı zorlayıcı talepleri olabilir. Belki de böyle birşey var ve ona uyulmadı bilemiyorum.
+Konunun Yemek Sepeti ile direkt ilgisi olmasa da, anlaşma yapacağı restoranlarda kurye kalitesi ve teknik donanımı konusunda bazı alt limitler belirleyebilir. Belki de böyle birşey var ve ona uyulmadı bilemiyorum.
