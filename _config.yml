@@ -26,8 +26,9 @@ description: E-ticaret, python, php, linux, teknoloji ve geliştirici araçları
 navbar-links:
   Anasayfa: "https://sinanerdinc.github.io/"
   Hakkımda: "hakkimda"
-  #Resources:
-    #- Learn markdown: "http://www.markdowntutorial.com/"
+  Kategoriler:
+    - Teknoloji: "https://www.sinanerdinc.com/teknoloji"
+    - Python: "https://www.sinanerdinc.com/python"
     #- GitHub Pages: "https://pages.github.com/"
   #İletişim: "iletisim"
 
