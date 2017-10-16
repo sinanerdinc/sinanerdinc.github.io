@@ -1,23 +1,21 @@
 ---
 layout: post
-published: false
+published: true
 title: Python Standart Random Modülü
-#image: 
+image: /img/2017/python_logo.png
 tags: [python, development]
 date: 2017-10-16
 categories:
     - "python"
 ---
-Python içinde standart olarak gelen Random modülünden bahsedelim biraz. Rastgele sayı üretmeyi sağlayan bir modül olan Random, python 1.4 ve üzerinde kullanılabiliyor.
-
-Bu modül, mersenne twister algoritmasını baz alarak çalışır. Uygulamanıza import ederek direkt çalıştırabilirsiniz. Biraz örneklere geçelim.
+Python içinde standart olarak gelen Random modülünden bahsedelim biraz. Rastgele sayı üretmeyi sağlayan bir modül olan Random, python 1.4 ve üzerinde kullanılabiliyor ve **mersenne twister** algoritmasını baz alarak çalışıyor. Uygulamanıza import ederek hemen kullanmaya başlayabilirsiniz. Hemen örneklere geçelim.
 
 ```
 import random
 ```
 şeklinde uygulamamız içerisine çağırdık.
 
-### random()
+## random()
 
 Bu bize 0 <= n < 1.0 aralığında bir sayı döner.
 
@@ -25,7 +23,8 @@ Bu bize 0 <= n < 1.0 aralığında bir sayı döner.
 >>> random.random()
 0.38872204424977774
 ```
-### uniform(min,max)
+
+## uniform(min,max)
 
 Bu bize min + (max - min) * random() işlemi sonucunda bir sayı döner.
 
@@ -34,7 +33,7 @@ Bu bize min + (max - min) * random() işlemi sonucunda bir sayı döner.
 52.19820527331601
 ```
 
-### randint(min,max)
+## randint(min,max)
 
 Min ve max aralığında integer olan bir sayı döner. Max dahildir. min <= n <= max
 
@@ -43,9 +42,9 @@ Min ve max aralığında integer olan bir sayı döner. Max dahildir. min <= n <
 86
 ```
 
-### randrange(min,max)
+## randrange(min,max)
 
-Min ve max aralığında max dahil olmayan bir sayı döner. min <= n < max 
+Min ve max aralığında max dahil olmayan bir sayı döner. min <= n < max
 3. bir parametre daha alır o parametre de bölünebilmeyi ifade eder.
 
 ```
@@ -59,9 +58,9 @@ Min ve max aralığında max dahil olmayan bir sayı döner. min <= n < max
 1
 ```
 
-### sample(var,q)
+## sample(liste,q)
 
-Var parametresi içinde q adet rastgele değeri döner.
+Liste içinde q adet rastgele değeri döner.
 
 ```
 >>> sayilar = range(50)
@@ -73,7 +72,7 @@ Var parametresi içinde q adet rastgele değeri döner.
 [11, 37, 36]
 ```
 
-### shuffle(list)
+## shuffle(list)
 
 Verdiğiniz bir liste içindeki değerlerin sırasını karıştırır.
 
