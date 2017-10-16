@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 title: Python Standart Random Modülü
 image: /img/2017/python_logo.png
 tags: [python, development]
