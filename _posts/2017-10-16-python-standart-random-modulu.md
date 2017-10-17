@@ -1,7 +1,9 @@
 ---
 layout: post
-published: false
-title: Python Standart Random Modülü
+published: true
+title: Python Random Modülü
+subtitle: Modüldeki kullanışlı methodlar
+permalink: /python-random-modulu
 image: /img/2017/python_logo.png
 tags: [python, development]
 date: 2017-10-16
@@ -26,10 +28,10 @@ Bu bize 0 <= n < 1.0 aralığında bir sayı döner.
 
 ## uniform(min,max)
 
-Bu bize min + (max - min) * random() işlemi sonucunda bir sayı döner.
+Bu bize min + (max - min) * random() işlemi sonucunda float bir sayı döner.
 
 ```
->>> random.uniform(1,100)
+>>> random.uniform(1,100) # Rastgele float:  1.0 <= x < 100.0
 52.19820527331601
 ```
 
@@ -83,4 +85,24 @@ Verdiğiniz bir liste içindeki değerlerin sırasını karıştırır.
 >>> random.shuffle(l) # l listesini karıştıralım.
 >>> l
 [4, 8, 7, 3, 2, 1, 6, 5, 9, 0]
+```
+
+## choice(list)
+
+Verdiğiniz bir liste içinden rastgele bir değer seçer.
+
+```
+>>> liste = list(range(20)) # 0'dan 20'ye kadar sayılar gelsin.
+>>> liste # doğru gelmiş mi kontrol edelim.
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+>>> random.choice(liste)
+0
+>>> random.choice(liste)
+5
+>>> random.choice(liste)
+10
+>>> random.choice(liste)
+11
+>>> random.choice(liste)
+5
 ```
