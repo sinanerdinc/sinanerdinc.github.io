@@ -10,7 +10,7 @@ date: 2017-10-17
 categories:
     - "python"
 ---
-Python, standart modüllerinin yanında harici yüzlerce kullanışlı modül ile birlikte çok güçlü bir dil. Bu gücü veren harika modüller var bunlardan biri de Requests modülü.
+Python, standart modüllerinin yanında harici yüzlerce kullanışlı modül ile birlikte çok güçlü bir dil. Bu gücü veren harika modüller var bunlardan biri de **Requests modülü.**
 
 Bu modül ile web üzerindeki isteklerinizi yöneteceksiniz. Mesela bu modül ile bir web service üzerinde işlem yapabilirsiniz veya API entpointlerine PUT, DELETE,POST gibi istekler atabilirsiniz.
 
@@ -26,10 +26,56 @@ komutu ile pip3 kullanmaya başlayabiliriz. Eğer pip3 yüklüyse buna gerek yok
 pip3 install requests
 ```
 Artık modülü kurduk, projemiz içerisine
+
 ```
 import requests
 ```
 
 diyerek aktaralım. Şimdi de bu güzel modülün özelliklerine geçelim.
 
-## random()
+{: .box-note}
+**Not:** Bütün örneklerde http://httpbin.org/ adresini kullanacağım, bu adres HTTP isteği yapıp cevap alabileceğiniz bir servis.
+
+## get(website)
+Parametre olarak gönderilen adrese get isteği gönderir, bir değişkene tanımlayıp daha sonra HTTP response & status kodunu da kontrol edebilirsiniz. HTTP status kodlarını incelemek isterseniz  [buraya tıklayabilirsiniz.](https://developer.mozilla.org/tr/docs/Web/HTTP/Status){:target="_blank"}
+
+```
+>>> r = requests.get("http://httpbin.org/")
+>>> r
+<Response [200]>
+```
+
+r değişkeni içerisinde kullanabileceğimiz bazı methodlar var.
+
+### text
+Sitenin HTML içeriğini döndürür.
+
+```
+>>> r = requests.get("http://httpbin.org/")
+>>> r.text
+```
+
+### headers
+Header bilgilerini gösterir.
+
+```
+>>> r = requests.get("http://httpbin.org/")
+>>> r.headers
+{'Content-Length': '13011', 'Content-Type': 'text/html; charset=utf-8', 'Server': 'meinheld/0.6.1', 'Date': 'Tue, 17 Oct 2017 21:29:49 GMT', 'Connection': 'keep-alive', 'Via': '1.1 vegur', 'X-Processed-Time': '0.00539398193359', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Origin': '*', 'X-Powered-By': 'Flask'}
+```
+Dilerseniz istediğiniz header bilgilerini siz get isteği ile birlikte belirtebilirsiniz.
+
+```
+r = requests.get("http://httpbin.org/", headers={'user-agent': 'sinanerdinc'})
+```
+
+### url
+Hangi url adresine istek gönderdiğini döner. İstek yaparken parametre olarak bazı değerler gönderebilirsiniz.
+
+```
+>>> r = requests.get("http://httpbin.org/", params={"ad":"sinan","soyad":"erdinc"})
+>>> r.url
+'http://httpbin.org/?soyad=erdinc&ad=sinan'
+```
+
+Url adresinin sonunda verdiğim parametrelerin nasıl iliştirildiğine dikkat edin.
