@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Python Requests Modülü
 subtitle: Web isteklerinizi python ile yapın
 permalink: /python-requests-modulu
@@ -66,7 +66,7 @@ Bazen istek attığınız sayfa başka bir sayfaya yönleniyor olabilir, bu yön
 >>> r.status_code
 200
 ```
-Dikkat ederseniz allow_redirects=False yapıldığında yönlendirmeyi kapattı ve o sayfanın status_code değeri 302 döndü. True yapınca da yönlendirmeye izin verildi ve status_code 200 döndü.
+Dikkat ederseniz allow_redirects=False yapıldığında yönlendirmeyi kapattı ve o sayfanın status_code değeri 302 döndü. True yapınca da yönlendirmeye izin verildi ve status_code 200 döndü. HTTP status kodlarını incelemek isterseniz  [buraya tıklayabilirsiniz.](https://developer.mozilla.org/tr/docs/Web/HTTP/Status "buraya tıklayabilirsiniz.")
 
 Bu örnek GET isteği içindi, şimdi bir de POST için sanki bir HTML formu doldurmuş ve o bilgileri post etmişiz gibi davranalım.
 
@@ -131,7 +131,7 @@ Burada bir parantez açalım, REST API ile çalışıyorsak, farklı endpointler
 >>> r.status_code
 200
 ```
-Bu örnek içerisinde headers parametresi ile özel bir user-agent değeri göndermiş oldum. **status_code** methodu ile de isteğe dönen durum kodunu kontrol ettim. Benim örneğimde 200 gelmiş, yani başarılı. HTTP status kodlarını incelemek isterseniz  [buraya tıklayabilirsiniz.](https://developer.mozilla.org/tr/docs/Web/HTTP/Status "buraya tıklayabilirsiniz.")
+Bu örnek içerisinde headers parametresi ile özel bir user-agent değeri göndermiş oldum. **status_code** methodu ile de isteğe dönen durum kodunu kontrol ettim. Benim örneğimde 200 gelmiş, yani başarılı. 
 
 # İstek attıktan sonra kullanılan methodlar
 Tüm örneklerde bir r değişkenine aktarmıştık attığımız tüm istekleri, şimdi bu r değişkeni içinde yani requests modülü içindeki istek attıktan sonra kullanabileceğimiz methodları inceleyelim.
