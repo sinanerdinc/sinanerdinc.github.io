@@ -6,7 +6,8 @@
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
 url: "http://www.sinanerdinc.com"
 baseurl: ""
-
+plugins:
+  - jekyll-sitemap
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
 #baseurl: "/projectname"
