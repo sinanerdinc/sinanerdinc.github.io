@@ -5,6 +5,7 @@ title: Python BeautifulSoup Modülü
 subtitle: Html veya Xml parse işlemlerinizi python ile yapabilirsiniz.
 permalink: /python-beautifulsoup-modulu
 image: /img/2017/python_logo.png
+share-img: /img/2017/python_logo.png
 tags: [python, development]
 date: 2017-10-23
 categories:

@@ -39,7 +39,7 @@ diyerek aktaralım.
 {: .box-note}
 **Not:** Javascript testi için ben [http://avi.im/stuff/js-or-no-js.html](http://avi.im/stuff/js-or-no-js.html?ref=sinanerdinc.com "http://avi.im/stuff/js-or-no-js.html") sayfasını kullanacağım. Eğer burayı js desteği olan bir tarayıcı ile açarsanız ekranda **Yay! Supports javascript** yazar. Eğer js desteği yoksa **No javascript support** yazar.
 
-## Problemi örnekleyelim.
+## Problemin Örneklenmesi
 ```
 >>> import requests
 >>> r = requests.get("http://avi.im/stuff/js-or-no-js.html")

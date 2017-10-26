@@ -5,6 +5,7 @@ title: Python Requests Modülü
 subtitle: Web isteklerinizi python ile yapın
 permalink: /python-requests-modulu
 image: /img/2017/python_logo.png
+share-img: /img/2017/python_logo.png
 tags: [python, development]
 date: 2017-10-17
 categories:
@@ -131,7 +132,7 @@ Burada bir parantez açalım, REST API ile çalışıyorsak, farklı endpointler
 >>> r.status_code
 200
 ```
-Bu örnek içerisinde headers parametresi ile özel bir user-agent değeri göndermiş oldum. **status_code** methodu ile de isteğe dönen durum kodunu kontrol ettim. Benim örneğimde 200 gelmiş, yani başarılı. 
+Bu örnek içerisinde headers parametresi ile özel bir user-agent değeri göndermiş oldum. **status_code** methodu ile de isteğe dönen durum kodunu kontrol ettim. Benim örneğimde 200 gelmiş, yani başarılı.
 
 # İstek attıktan sonra kullanılan methodlar
 Tüm örneklerde bir r değişkenine aktarmıştık attığımız tüm istekleri, şimdi bu r değişkeni içinde yani requests modülü içindeki istek attıktan sonra kullanabileceğimiz methodları inceleyelim.
