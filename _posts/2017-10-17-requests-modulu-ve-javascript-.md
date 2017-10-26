@@ -4,8 +4,8 @@ published: true
 title: Python Dryscrape Modülü ve Javascript
 subtitle: Projenizde dryscrape modülünü kullanarak javascript desteği kazandırabilirsiniz.
 permalink: /python-dryscrape-modulu-ve-javascript
-image: /img/2017/python_logo.png
-share-img: /img/2017/python_logo.png
+image: /img/2017/python-dryscrape.png
+share-img: /img/2017/python-dryscrape.png
 tags: [python, development]
 date: 2017-10-26
 categories:

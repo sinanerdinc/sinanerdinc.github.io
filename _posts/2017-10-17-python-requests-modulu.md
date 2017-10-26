@@ -4,8 +4,8 @@ published: true
 title: Python Requests Modülü
 subtitle: Web isteklerinizi python ile yapın
 permalink: /python-requests-modulu
-image: /img/2017/python_logo.png
-share-img: /img/2017/python_logo.png
+image: /img/2017/python-requests.png
+share-img: /img/2017/python-requests.png
 tags: [python, development]
 date: 2017-10-17
 categories:
