@@ -15,6 +15,14 @@ Python, standart modüllerinin yanında harici yüzlerce kullanışlı modül il
 
 Bu modül ile web üzerindeki isteklerinizi yöneteceksiniz. Mesela bu modül ile API entpointlerine PUT, DELETE, POST gibi istekler atabilirsiniz.
 
+{: .box-warning}
+Requests modülü ile ilgili youtube kanalımda bir video hazırladım ve buraya ekledim. İlk önce yazıları okuyup sonra videoyu izlemenizde fayda var.
+
+<div class="youtubeContainer">
+<iframe src="//www.youtube.com/embed/3yLrXiZEsBg"
+frameborder="0" allowfullscreen class="youtubeVideo"></iframe>
+</div>
+
 ## Kurulum
 Ben pip3 ile kurmuştum, pip3 python3 için paket yöneticisi.
 
