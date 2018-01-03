@@ -7,13 +7,13 @@ permalink: /python-re-modulu
 image: /img/2017/python-os.png
 share-img: /img/2017/python-os.png
 tags: [python, development]
-date: 2017-11-22
+date: 2018-01-01
 categories:
     - "python"
 ---
-Düzenli ifadeler (Regular Expressions) yazılım hayatımızda mutlaka karşımıza çıkacak bir terimdir. Çok sık çıkmaz ama kesinlikle çıkar. Anlaması biraz zor gelebilir, bazı temel yapılar ile üstesinden gelmeye çalışalım. Zaten ben de bu içeriği, ihtiyacım olduğunda tekrar geri dönüp, konuyu hatırlayabilmek için yazıyorum.
+Düzenli ifadeler (Regular Expressions) yazılım hayatınızda mutlaka karşınıza çıkacak bir terimdir. Çok sık çıkmaz ama kesinlikle çıkar. Anlaması ilk önce biraz zor gelebilir, bazı temel yapıları uygulamalı olarak anlatmaya çalışalım. Zaten ben de bu içeriği, ihtiyacım olduğunda tekrar geri dönüp, konuyu hatırlayabilmek için yazıyorum.
 
-Düzenli ifadeler tüm modern dillerde bulunur, dağınık bir metin içerisinde istediğimiz formattaki metinleri yakalayabilmemize imkan tanır. Mesela, bir kaynakta geçen tüm e-posta adreslerini veya içinde rakam bulunan ve gmail uzantılı olan mail adreslerini ayıklamak için kullanılabilir. Düzenli ifadeler kullanılmadığında ardı arkasına birçok if - else yazmanız gerekebilir. Bu modül, birkaç saatte yapabileceğiniz bir işlemi saniyeler içerisinde sizin yerinize yapabilir. Uzmanlaşması biraz vakit alır unutması da en hızlı modüllerden biridir.
+Düzenli ifadeler tüm modern dillerde bulunur, dağınık bir metin içerisinde istediğimiz formattaki metinleri yakalayabilmemize imkan tanır. Mesela, bir kaynakta geçen tüm e-posta adreslerini veya içinde rakam bulunan ve gmail uzantılı olan mail adreslerini ayıklamak için kullanabilirsiniz. Düzenli ifadeler olmasaydı ardı arkasına birçok if - else yazmak gerekebilirdi. Bu modül, birkaç saatte yapabileceğiniz bir işlemi saniyeler içerisinde sizin yerinize yapabiliyor. Uzmanlaşması biraz vakit alsa da unutması en hızlı modüllerden biri bence.
 
 ## Kurulum
 Python ile standart olarak gelen bir kütüphanedir. Kurulum gerektirmez.
@@ -98,7 +98,7 @@ Kaynak içerisindeki karakterlerin toplam sayısını döndürür. \n gibi satı
 
 
 
-### YUKARISINI DÜZELT METİNLER DEĞİŞECEK
+## YUKARISINI DÜZELT METİNLER DEĞİŞECEK
 
 
 
@@ -141,7 +141,7 @@ Bir ifadenin bütün tekrarlanmalarını bulur.
 >>> re.findall("@g*mail","E-posta adresimiz test@mail.com, test@gmail.com ve test@ggggggmail.com")
 ['@mail', '@gmail', '@ggggggmail']
 ```
-g harfinden sonra * koyduk, yani bu g karakteri 0 kere de geçebilir 100 kere de geçebilir. Bu ayrım sadece kendinden önceki harfi kapsıyor. Bu nedenle @mail ve @gmail döndü.
+g harfinden sonra * koyduk, yani bu g karakteri 0 kere de geçebilir 100 kere de geçebilir. Bu ayrım sadece kendinden önceki harfi kapsıyor. Bu nedenle @mail, @gmail ve @ggggggmail döndü.
 
 ## +  Karakteri
 Kendinden önce gelen karakterin bir veya daha fazla kullanılmasını arar. Üstte yaptığımız * ile ilgili örneği bu sefer + ile yaparsak;
@@ -151,7 +151,7 @@ Kendinden önce gelen karakterin bir veya daha fazla kullanılmasını arar. Üs
 ['@gmail', '@ggggggmail']
 
 ```
-şeklinde sadece  @gmail döner. Çünkü g harfinden sonra + koyarak bu harfin 1 veya daha fazla geçmesi gerektiğini söyledik.
+şeklinde @gmail ve @ggggggmail döner. Çünkü g harfinden sonra + koyarak bu harfin 1 veya daha fazla geçmesi gerektiğini söyledik.
 
 ## ?  Karakteri
 Kendinden önce gelen karakterin 0 veya 1 kere tekrar etmesini sorgular.
@@ -196,7 +196,7 @@ A-Z arasındaki büyük bir harfle başlayan ve sonra **ilal** ile devam edenler
 >>> re.findall("[a-z]ilal","Hilal ve Bilal çok iyi arkadaştır.")
 []
 ```
-Gördüğünüz gibi hiçbir sonuç dönmedi.
+Gördüğünüz gibi hiçbir sonuç dönmedi. Çünkü Hilal ve Bilal büyük harfler ile başlıyor.
 
 ## { } Karakterleri
 
@@ -214,3 +214,83 @@ Belirli bir sayıda tekrar anlamındadır. Şimdi yukarıda öğrendiklerimiz il
 ```
 
 Bingo!
+
+## ^ Karakteri
+İfadenin başlangıcını kontrol eder ve [ ] karakterleri ile birlikte kullanılırsa da **hariç** anlamına gelir.
+
+```
+>>> re.findall("^Oku","Oku oğul, sesli oku.")
+['Oku']
+>>> re.findall("^sesli","Oku oğul, sesli oku.")
+[]
+```
+Kaynağımız Oku ile başladığı için ilk örnek başarıyla ^Oku sayesinde çalıştı. Ancak diğer örnekte ^sesli ayracı birşey dönmedi, halbuki kaynak içerisinde bu metin var fakat başında değil.
+
+Bu meta karakter sabit bir metin için kullanışlı gelmeyebilir. Çünkü zaten metnin başını gözle de görebiliyorsunuz, fakat bir listeyi for döngüsüne sokarak böyle bir metakarakter kullanılırsa çok faydalı olabilir. Bir örnek yapalım.
+
+```
+metin = "Mustafa başkomiser ve yardımcısı Kemalettin, 34XY6699 plakalı arabanın peşinde."
+liste = metin.split()
+for i in liste:
+  sonuc = re.findall("^[A-Z]+[a-z]+",i)
+  if sonuc:
+    print(sonuc)
+
+['Mustafa']
+['Kemalettin']
+```
+
+Örnek içerisinde metin değişkenindeki içeriği split() methodu ile kelime kelime parçalayıp liste içerisine attık. Sonra da bir for döngüsü ile her bir kelimeyi kontrol ederek büyük harfli kelimeleri ayırdık.
+
+Şimdi de plakayı biraz uzun bir yol kullanarak bulalım.
+
+```
+for i in liste:
+  sonuc = re.findall("[^A-Za-z-][0-9]+[A-Z]+[0-9]+",i)
+  if sonuc:
+    print(sonuc)
+
+['34XY6699']
+```
+
+[ ] arasındaki A-Za-z ifadesi büyük veya küçük harf anlamını taşıyor. Başına da ^ eklediğimizde büyük veya küçük harf ile **başlamasın** demiş oluyoruz. Sonra 0-9 ile devam etsin sonra tekrar büyük harf ve sonra tekrar 0-9 ile devam etsin. Sonuç olarak plakayı çektik.
+
+Peki plakayı daha kısa bir yoldan bulmak isteseydik nasıl bulurduk? Bu da ödev olsun yorum olarak yazarsınız.
+
+
+## $ Karakteri
+Yukarıda ifadenin başlangıcını kontrol etmiştik, $ metakarakteri ile de ifadenin sonunu yani ne ile bittiğini kontrol edebiliyoruz.
+
+```
+metin = "Silikon vadisi, google.com ve apple.com arasındaki rekabeti tartışıyor."
+liste = metin.split()
+for i in liste:
+  sonuc = re.search(".com$",i)
+  if sonuc:
+    print(sonuc.string)
+
+google.com
+apple.com
+```
+Örnek bir metin oluşturup içerisinde google.com ve apple.com alan adlarını yerleştirdim. Ardından bu metni split() methodu ile bir liste içerisine aldım. Sonra bir for döngüsü ile her bir kelimenin .com ile bitip bitmediğini, eğer bitiyorsa ekrana yazmasını istedim. Bu şekilde bir metinde geçen .com ile biten kelimeleri çıkarabildim.
+
+Daha anlatmadım, aşağıda anlatacağım ama yeri gelmişken yazayım istedim. Eğer burdaki .com veya .net ile bitenleri bulmak istersek aradaki **veya** ifadesini karşılamak için \| karakterini kullanıyoruz. Örnek;
+
+```
+metin = "Silikon vadisi, google.com ve apple.net arasındaki rekabeti tartışıyor."
+liste = metin.split()
+for i in liste:
+  sonuc = re.search("(.com|.net)$",i)
+  if sonuc:
+    print(sonuc.string)
+```
+Bu kod parçası da metin içerisinde geçen .com veya .net geçenleri ekrana bastırır.
+
+## \| Karakteri
+Yukarıda verdiğim örnek içerisinde kullanmıştım, veya anlamına gelir.
+
+```
+>>> re.findall("(siyah|beyaz)","Beşiktaş, siyah ve beyaz renkleri ile anılır.")
+['siyah', 'beyaz']
+```
+Kaynaktan siyah veya beyaz metinlerini aldık.
