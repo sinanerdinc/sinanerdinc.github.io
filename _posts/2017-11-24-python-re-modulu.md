@@ -325,3 +325,6 @@ Bu ifade kaynaktaki karakter,sayı ve alt çizgiyi yakalar. Büyük harfle yazı
 [' ', ' ', '%', '@', '.', ' ', '?']
 ```
 \w kullandığımda % @ ve ? simgeleri gelmezken \W kullandığımda geliyor.
+
+{: .box-note}
+**Not:** Ek olarak hızlıca regex denemeleri yapmak isterseniz [https://regex101.com/](https://regex101.com/ "https://regex101.com/") ve [https://regexr.com/](https://regexr.com/ "https://regexr.com/") adreslerini kullanabilirsiniz.
