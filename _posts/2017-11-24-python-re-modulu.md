@@ -1,13 +1,13 @@
 ---
 layout: post
-published: false
+published: true
 title: Python Re Modülü
 subtitle: Python'da Düzenli İfade (Regular Expression) Kullanımı
 permalink: /python-re-modulu
-image: /img/2017/python-os.png
-share-img: /img/2017/python-os.png
+image: /img/2018/python-re.png
+share-img: /img/2018/python-re.png
 tags: [python, development]
-date: 2018-01-01
+date: 2018-01-14
 categories:
     - "python"
 ---
@@ -15,7 +15,7 @@ Düzenli ifadeler (Regular Expressions) yazılım hayatınızda mutlaka karşın
 
 Düzenli ifadeler tüm modern dillerde bulunur, dağınık bir metin içerisinde istediğimiz formattaki metinleri yakalayabilmemize imkan tanır. Mesela, bir kaynakta geçen tüm e-posta adreslerini veya içinde rakam bulunan ve gmail uzantılı olan mail adreslerini ayıklamak için kullanabilirsiniz. Düzenli ifadeler olmasaydı ardı arkasına birçok if - else yazmak gerekebilirdi. Bu modül, birkaç saatte yapabileceğiniz bir işlemi saniyeler içerisinde sizin yerinize yapabiliyor. Uzmanlaşması biraz vakit alsa da unutması en hızlı modüllerden biri bence.
 
-## Kurulum
+# Kurulum
 Python ile standart olarak gelen bir kütüphanedir. Kurulum gerektirmez.
 
 ```
@@ -24,89 +24,58 @@ import re
 
 şeklinde projeniz içerisine aktardıktan sonra kullanmaya başlayabilirsiniz.
 
-## Standart Metin
-Tüm düzenli ifade işlemlerim için aşağıda standart bir metin hazırladım. Bu metin üzerinde bol bol farklı örnekler ile birlikte bu modülü inceleyelim.
-
-```
-metin = """
-Merhaba arkadaşlar ben Sinan, bu eğitim içerisinde kullanacağımız metin aşağıdaki gibidir.
-
-Örnek;
-abcdefghijklmnopqrstuvwxyz
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-0123456789
-test@mail.org
-test@gmail.com
-https://www.google.com
-http://www.google.net
-http://www.sinanerdinc.com
-https://sinanerdinc.com
-www.sinanerdinc.com
-+9 0555 222 33 44
-"""
-```
-
-# 1. search
+# search
 Bu method, aranılan bir içeriğin ilgili metin içerisinde olup olmadığını kontrol eder.
 
 ```
-# metin değişkenini yukarıda tanımlamıştık.
->>> kontrol = re.search("Sinan",metin)
->>> kontrol
-<_sre.SRE_Match object; span=(24, 29), match='Sinan'>
+>>> re.search("Sinan","Merhaba ben Sinan, senin adın nedir?")
+<_sre.SRE_Match object; span=(12, 17), match='Sinan'>
 ```
 
-Oluşturduğum metin değişkenindeki yazı içinde Sinan geçiyormu diye sorgulayıp gelen objeyi kontrol değişkenine atadım. Sonra kontrol değişkenine baktım, dikkat ederseniz span ve match diye alanlar var. Burada match aradığınız değeri, span ise nerede olduğunu gösterir. Aradığınız yerdeki 24. ve 29. harfler arasındaymış o zaman kontrol edelim.
+Metin içerisinde geçen Sinan kelimesini arattırdık, dikkat ederseniz span ve match diye alanlar var. Burada match aradığınız değeri, span ise nerede olduğunu gösterir. Aradığınız yerdeki 12. ve 17. harfler arasındaymış o zaman kontrol edelim.
 
 ```
->>> metin[24:29]
+>>> metin = "Merhaba ben Sinan, senin adın nedir?"
+>>> metin[12:17]
 'Sinan'
 ```
 
 Gördüğünüz gibi tekrar Sinan değeri döndü. Search methodu ilgili metnin nerede olduğunu başarıyla bize söyleyebildi.
 
-## 1.1 start()
+## start()
 
-Üstteki örnek içerisinde kontrol değişkenine Sinan kelimesini aratıp sonucunu atamıştık, bu değişken üzerinde kullanabileceğimiz methodlarda biri start() methodu. Bu, aratılan kelimenin, kaynakta nerede geçtiğini döndürür. Biz zaten yukarıdaki örnekte (24,29) arasında olduğunu biliyoruz. Sadece burdan 24 değerini çekmek istersek kullanabiliriz.
+Bu method aratılan kelimenin, kaynakta nerede geçtiğini döndürür. Biz zaten yukarıdaki örnekte (24,29) arasında olduğunu biliyoruz. Sadece burdan 12 değerini çekmek istersek kullanabiliriz.
 
 ```
+>>> kontrol = re.search("Sinan","Merhaba ben Sinan, senin adın nedir?")
 >>> kontrol.start()
-24
+12
 ```
 
-## 1.2 end()
+## end()
 
-Üstteki start methodunun tersini yapar, yani aratılan kelime hangi aralıkta geçiyorsa onun son değerini döndürür. Biz kaynakta Sinan kelimesinin (24,29) arasında geçtiğini biliyoruz. Start methodu 24 dönmüştü, end methodu da 29 değerini dönecektir.
+Üstteki start methodunun tersini yapar, yani aratılan kelime hangi aralıkta geçiyorsa onun son değerini döndürür. Biz kaynakta Sinan kelimesinin (12,17) arasında geçtiğini biliyoruz. Start methodu 12 dönmüştü, end methodu da 17 değerini dönecektir.
 
 ```
+>>> kontrol = re.search("Sinan","Merhaba ben Sinan, senin adın nedir?")
 >>> kontrol.end()
-29
+17
 ```
 
-## 1.3 endpos()
+## endpos()
 Kaynak içerisindeki karakterlerin toplam sayısını döndürür. \n gibi satır atlatma karakterleri de sayılır.
 
 ```
+>>> metin = "Merhaba ben Sinan, senin adın nedir?"
+>>> kontrol = re.search("Sinan",metin)
 >>> kontrol.endpos
-328
->>> metin[:328]
-'\nMerhaba arkadaşlar ben Sinan, bu eğitim içerisinde kullanacağımız metin aşağıdaki gibidir.\n\nÖrnek;\nabcdefghijklmnopqrstuvwxyz\nABCDEFGHIJKLMNOPQRSTUVWXYZ\n0123456789\ntest@mail.org\ntest@gmail.com\nhttps://www.google.com\nhttp://www.google.net\nhttp://www.sinanerdinc.com\nhttps://sinanerdinc.com\nwww.sinanerdinc.com\n+9 0555 222 33 44\n'
+36
+>>> metin[:36]
+'Merhaba ben Sinan, senin adın nedir?'
 ```
-İlk önce endpos ile 328 karakter olduğunu gördüm, sonra metin değişkenini 328'e kadar görüntüledim ve doğruluğunu teyid ettim.
+İlk metin değişkeni içine bir içerik yazdım, sonra içinde sinan geçiyormu diye bakarak sonucu bir kontrol objesine atadım, ardından endpos ile 36 karakter olduğunu gördüm, sonra metin değişkenini 36'ya kadar görüntüledim ve doğruluğunu teyid ettim.
 
-
-
-
-
-## YUKARISINI DÜZELT METİNLER DEĞİŞECEK
-
-
-
-
-
-
-
-# 2. findall
+# findall
 Bu method ile bir kaynak içerisinde istediğimiz metnin kaç kere geçtiğini inceleyebiliriz.
 
 ```
@@ -121,7 +90,7 @@ Oluşturduğum metin içerisinde **zaman** kelimesi var mı diye sorguladım. Li
 ```
 Bu şekilde 2 kere geçtiğini de görmüş oldum.
 
-# 2. Metakarakterler
+# Metakarakterler
 Bu noktaya kadar bir kaynak içerisinde belirli bir metin aradık, ancak bu modülü güçlü yapan şey bu noktadan sonra anlatacağımız metakarakterlerdir. Bu metakarakterler sayesinde, belirlediğiniz bir düzene uyan metinleri arayabilirsiniz. Mesela sinan metnini aramak yerine, sinan, sunan, sühan, solan gibi belirli bir şablon içerisine giren metinleri de arayabilirsiniz. İşte bunu yapmamızı sağlayan, aranılan metne eklediğimiz bazı özel karakterler var, bu karakterleri inceleyelim.
 
 
@@ -259,7 +228,7 @@ Peki plakayı daha kısa bir yoldan bulmak isteseydik nasıl bulurduk? Bu da öd
 
 
 ## $ Karakteri
-Yukarıda ifadenin başlangıcını kontrol etmiştik, $ metakarakteri ile de ifadenin sonunu yani ne ile bittiğini kontrol edebiliyoruz.
+Yukarıda, ^ karakteri ile bir ifadenin başlangıcını kontrol etmiştik, **$ metakarakteri ile de ifadenin sonunu** yani ne ile bittiğini kontrol edebiliyoruz.
 
 ```
 metin = "Silikon vadisi, google.com ve apple.com arasındaki rekabeti tartışıyor."
@@ -293,4 +262,66 @@ Yukarıda verdiğim örnek içerisinde kullanmıştım, veya anlamına gelir.
 >>> re.findall("(siyah|beyaz)","Beşiktaş, siyah ve beyaz renkleri ile anılır.")
 ['siyah', 'beyaz']
 ```
-Kaynaktan siyah veya beyaz metinlerini aldık.
+Kaynaktan siyah veya beyaz metinlerini aldık. Arama yaparken birden fazla değeri kaynak içerisinde bulmayı mümkün kılar.
+
+## ( ) Karakterleri
+Parantez de yazdığımız kalıpları gruplamak için kullanılır. Matematikteki bölme ve çarpma için öncelik belirlerken kullandığımız parantez gibi düşünebilirsiniz.
+
+## \ Karakteri
+Kaçış dizisidir. Buraya kadar birçok karakter gördük, mesela bunlardan biri de $ simgesi. Bir ifadenin sonunu kontrol etmek için kullanıyorduk. Ancak bu bir dolar simgesi ve bazen bir para birimi olarak da kaynak içerisinde bulunabilir, ve biz bunları ayıklamak isteriz. Mesela;
+
+```
+>>> re.findall("[0-9]+$","Ekran kartı 150$, ses kartı ise 90$")
+[]
+>>> re.findall("[0-9]+\$","Ekran kartı 150$, ses kartı ise 90$")
+['150$', '90$']
+```
+0-9 ile başlayan sonra $ ile devam eden bir arama yaptığımızda eğer ters slash koymazsak python bunun özel bir anlam ifade ettiğini zannediyor ve sonuç döndürmüyor. Kaçış karakteri kullandığımızda ise başarıyla fiyatları döndürüyor.
+
+# Meta Sequences
+Bunu nasıl çevireceğimi bilemedim. Metakarakter gibi ama özel bir anlam ifade eden yapılar var son olarak onlara bakalım.
+
+## \s ve \S İfadesi
+Bu ifade kaynaktaki boşluğu yakalar. Büyük harfle yazılan hali ise boşluk haricindekileri yakalar.
+
+```
+>>> re.findall("\s","Bil bakalım kaç boşluk var.")
+[' ', ' ', ' ', ' ']
+>>> len(re.findall("\s","Bil bakalım kaç boşluk var."))
+4
+```
+
+Metin içinde kaç tane boşluk olduğunu görmek için \s ifadesini kullandım. Sonra len methodu ile adedini ekrana bastırdım.
+
+Peki boşluk haricindekileri bulmak isteseydim? Onu da \S ile yapıyorum.
+
+```
+>>> re.findall("\S+","Bil bakalım kaç boşluk var.")
+['Bil', 'bakalım', 'kaç', 'boşluk', 'var.']
+```
+
+## \d ve \D İfadesi
+Bu ifade kaynaktaki sayıyı yakalar. Büyük harfle yazılan hali ise sayı olmayanları yakalar.
+
+```
+>>> re.findall("\d+","Gelirken 1 kilo yoğurt ve 2 adet ekmek alırsın.")
+['1', '2']
+```
+Başarıyla kaynaktaki sayıları yakaladım. Sayı haricindekileri yakalayalım.
+
+```
+>>> re.findall("\D+","Gelirken 1 kilo yoğurt ve 2 adet ekmek alırsın.")
+['Gelirken ', ' kilo yoğurt ve ', ' adet ekmek alırsın.']
+```
+
+## \w ve \W İfadesi
+
+Bu ifade kaynaktaki karakter,sayı ve alt çizgiyi yakalar. Büyük harfle yazılan hali ise tam tersini yani boşluk, nokta, soru işareti, boşluk gibi karakterleri yakalar.
+
+```
+>>> re.findall("\w+","Mail adresin sinan%erdinc@test.com mu?")
+['Mail', 'adresin', 'sinan', 'erdinc', 'test', 'com', 'mu']
+>>> re.findall("\W+","Mail adresin sinan%erdinc@test.com mu?")
+[' ', ' ', '%', '@', '.', ' ', '?']
+```
+\w kullandığımda % @ ve ? simgeleri gelmezken \W kullandığımda geliyor.
