@@ -12,8 +12,9 @@ Selam ben Sinan.
 Genellikle aşağıdaki konular ile ilgili içerikler okuyacaksınız.
 
 - Python
-- Php & Behat
 - Linux
+- Php
+- Geliştirici Araçları
 - Eticaret
 - Teknoloji
 
