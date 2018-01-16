@@ -44,7 +44,7 @@ Gördüğünüz gibi tekrar Sinan değeri döndü. Search methodu ilgili metnin 
 
 ## start()
 
-Bu method aratılan kelimenin, kaynakta nerede geçtiğini döndürür. Biz zaten yukarıdaki örnekte (24,29) arasında olduğunu biliyoruz. Sadece burdan 12 değerini çekmek istersek kullanabiliriz.
+Bu method aratılan kelimenin, kaynakta nerede geçtiğini döndürür. Biz zaten yukarıdaki örnekte (12,17) arasında olduğunu biliyoruz. Sadece burdan 12 değerini çekmek istersek kullanabiliriz.
 
 ```
 >>> kontrol = re.search("Sinan","Merhaba ben Sinan, senin adın nedir?")
