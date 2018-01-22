@@ -1,0 +1,110 @@
+---
+layout: post
+published: false
+title: Python PyAutoGui Modülü
+subtitle: Python ile mouse konumu, tıklatma, klavye kontrolü ve ekran görüntüsü alma gibi işlemleri yönetin.
+permalink: /python-pyautogui-modulu
+image: /img/2018/python-re.png
+share-img: /img/2018/python-re.png
+tags: [python, development]
+date: 2018-01-22
+categories:
+    - "python"
+---
+
+Bugün sizlere acayip eğlenceli bir modül anlatıyorum. Modülün adı pyautogui, bu modül ile bilgisayarınızdaki birçok işi otomatize edebilirsiniz. Mouse hareketlerini, klavyenizi yönetebilir, ekran görüntüleri alabilir daha birçok işlem yapabilirsiniz.
+
+# İçindekiler
+Kurulumu
+Genel Fonksiyonlar
+Mouse İçin Fonksiyonlar
+
+# Kurulumu
+
+```python
+sudo pip3 install python3-xlib
+sudo apt-get install scrot
+sudo apt-get install python3-tk
+sudo pip3 install pyautogui
+```
+şeklinde bilgisayarınıza kurabilirsiniz.
+
+```
+import pyautogui
+```
+şeklinde ise projeniz içerisine aktarabilirsiniz.
+
+# Genel Fonksiyonlar
+### position()
+Bilgisayarınızdaki mouse için o an içerisinde bulunduğu konumu, pozisyonu döner.
+
+```
+>>> pyautogui.position()
+(2594, 495)
+>>> pyautogui.position()
+(1579, 229)
+>>> pyautogui.position()
+(2668, 231)
+>>> pyautogui.position()
+(2050, 811)
+```
+
+Ben burda 4 kere çalıştırdım ve her seferinde mouse farklı bir konumdaydı.
+
+### size()
+Ekran çözünürlük bilginizi geri döner.
+```
+>>> pyautogui.size()
+(3286, 1080)
+```
+Ben şuan bu yazıyı yazarken, çift ekran kullandığım için biraz böyle orantısız çıktı.
+
+### onScreen(x,y)
+Parametre olarak geçilen x ve y değerlerinin ekran içerisinde olup olmadığını True veya False olarak geri döner.
+
+```
+>>> pyautogui.size()
+(3286, 1080)
+>>> pyautogui.onScreen(4000,1080)
+False
+>>> pyautogui.onScreen(2000,1080)
+False
+>>> pyautogui.onScreen(2000,1070)
+True
+>>> pyautogui.onScreen(3286,1070)
+False
+>>> pyautogui.onScreen(3285,1070)
+True
+```
+İlk önce size methodu ile çözünürlüğe baktım 3286 x 1080. Ardından 4000 x 1080 noktası benim çözünürlüğüm içinde mi diye sordum False döndü. 2000 x 1080 içinde mi diye sordum yine False döndü. Halbuki True döner diye beklemiştim. Demekki burda küçük eşittir diye bir kontrol yok, sadece küçüktür diye bir kontrol var. O yüzden 3286 x 1080 den 1px düşük bir skalada başarıyla True dönecektir. Aynı şekilde 3286 x 1070 sorguladığımda False dönerken, 3285 x 1070 yani 1px düşüğü True dönüyor.
+
+# Mouse İçin Fonksiyonlar
+Şimdi biraz mouse hareketlerini değiştirmek için kullanılabilecek methodlara geçelim.
+## displayMousePosition()
+Bu method size o an mouse koordinatlarını döner, canlı şekilde değişir. Ayrıca mouse hangi noktanın üzerinde ise oranın RGB renk kodunu da döndürür.
+```
+>>> pyautogui.displayMousePosition()
+Press Ctrl-C to quit.
+X: 2795 Y: 1020 RGB: ( 81, 192, 219)
+```
+## moveTo(x,y)
+Bu method ile mouse poziyonunu bir noktadan diğerine sürükleyebilirsiniz.
+```
+>>> pyautogui.moveTo(1000,50)
+```
+Bunu çalıştırdığınızda tabiri caizce şaak diye mouse o noktaya gitti. Eğer bunu daha insancıl bir şekilde sürükleyerek götürmek isterseniz duration diye bir parametre daha alır ve içerisine saniye olarak bir değer girersiniz.
+
+```
+>>> pyautogui.moveTo(1000,50,duration=3)
+```
+Bu şekilde 3 saniyede ilgili x ve y değerine sürüklendi.
+
+## moveRel(x,y)
+Bu method ile aynı üstteki moveTo gibi mouse poziyonunu bir noktadan diğerine sürükleyebilirsiniz, ancak moveTo 'dan farkı relatif bir sürükleme yaparsınız. Peki relatif sürükleme nedir derseniz de onu şöyle izah edelim. Bazen bulunduğunuz mouse koordinatından sağa 100px veya yukarı 200px gitmek isteyebilirsiniz. En sonunda hangi koordinata gideceğinizi bilmiyorsunuz ama bulunduğunuz koordinatın üzerine bir değer eklemek veya çıkarmak istiyorsunuz. O zaman kullanabilirsiniz.
+
+```
+>>> pyautogui.moveRel(-400,0,duration=3)
+>>> pyautogui.moveRel(0,200,duration=1.5)
+```
+Birinci satırda 3sn içinde mouse için o anki koordinattan sola 400px gittim. İkincisinde ise 1.5 saniye içerisinde aşağıya 200px gittim.
+
