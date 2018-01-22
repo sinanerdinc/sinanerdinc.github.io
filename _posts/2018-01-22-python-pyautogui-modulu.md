@@ -2,7 +2,7 @@
 layout: post
 published: false
 title: Python PyAutoGui Modülü
-subtitle: Python ile mouse konumu, tıklama, klavye kontrolü ve ekran görüntüsü alma gibi işlemleri yönetin.
+subtitle: Python ile mouse konumu, tıklama, klavye kontrolü ve ekran görüntüsü alma gibi işlemleri yönetebilir, dilerseniz otomatikleştirebilirsiniz.
 permalink: /python-pyautogui-modulu
 image: /img/2018/pythonautogui/python-pyautogui.png
 share-img: /img/2018/pythonautogui/python-pyautogui.png
@@ -20,6 +20,7 @@ Bugün sizlere acayip eğlenceli bir modül anlatıyorum. Modülün adı **pyaut
 - [Mouse Aksiyon Fonksiyonları](#mouse-aksiyon-fonksiyonlar)
 - [Klavye Aksiyon Fonksiyonları](#klavye-aksiyon-fonksiyonlar)
 - [Mesaj Kutusu Fonksiyonları](#mesaj-kutusu-fonksiyonlar)
+- [Ekran Görüntüsü Fonksiyonları](#ekran-grnts-fonksiyonlar)
 - [Kaynaklar](#kaynaklar)
 
 # Kurulum
@@ -271,18 +272,40 @@ Eğer girilen metin kutusunda şifre gibi özel maskeli birşeyler olacak ise o 
 ![pyautogui password](/img/2018/pythonautogui/password.png#center "pyautogui password")
 
 
+# Ekran Görüntüsü Fonksiyonları
+Ekran görüntüsü ile ilgili işlemlerin yapıldığı methodları inceleyelim.
 
+## 1- screenshot()
+Ekran görüntüsü almak için kullanılan method.
 
+```
+>>> pyautogui.screenshot("/home/sinan/Downloads/ekrangoruntum.png")
+<PIL.PngImagePlugin.PngImageFile image mode=RGB size=3040x900 at 0x7FA7DF6AA208>
+```
+Bu şekilde ekran görüntüsünü belirli bir yola kaydedebilirsiniz.
 
+## 2- locateCenterOnScreen()
+Bu kullanışlı method ise bilgisayarınızdaki bir resim, ekranda varsa hangi koordinatlarda olduğunu size döner. Ben avatarımı kestim ve bilgisayarıma kaydettim.
 
+![sinan avatar](/img/2018/pythonautogui/sinan.png#center "sinan avatar")
 
+Ardından bu avatar sayfada hangi koordinatlarda onu aradım.
 
+```
+x,y = pyautogui.locateCenterOnScreen("/home/sinan/Pictures/sinan.png")
+>>> x,y
+(740, 181)
+>>> pyautogui.moveTo(x,y,duration=1.5)
+```
+Ardından gelen verileri kontrol ettim, sonrasında ise moveTo() methodu ile mouse avatarımın bulunduğu yere gitt 1.5 saniye içinde. Çok güzel değil mi?
 
+Resim bulmayı hızlandırmak için aramayı siyah beyaz resim olarak yapmak için **grayscale=True** parametresi de var.
 
-
-
-
-
+```
+pyautogui.locateCenterOnScreen("/home/sinan/Pictures/sinan.png",grayscale=True)
+```
+şeklinde kullanılır. Aradığınız görselin belirgin olması bulmayı kolaylaştırır. Ayrıca eğer siyah beyaz arama yapacaksanız, aynı şekle sahip sadece farklı renkteki resimler de bulunabilir. Aklınızda bulunsun.
 
 # Kaynaklar
-https://pyautogui.readthedocs.io/en/latest/cheatsheet.html
+- https://pyautogui.readthedocs.io/en/latest/cheatsheet.html
+- https://automatetheboringstuff.com
