@@ -19,6 +19,7 @@ Kurulumu
 Genel Fonksiyonlar
 Mouse Hareketleri İçin Kullanılan Fonksiyonlar
 Klavye İçin Kullanılan Fonksiyonlar
+Mesaj Kutusu İçin Kullanılan Fonksiyonlar
 
 Kaynaklar
 
@@ -208,6 +209,28 @@ pyautogui.hotkey('ctrl', 'v')
 Kopyala ve yapıştır yapmış olduk.
 
 
+# Mesaj Kutusu İçin Kullanılan Fonksiyonlar
+Bu modül ile işlemler yaparken bazen kullanıcıdan onay almak isteyebilirsiniz, böyle anlarda bir mesaj kutusu çıkarmanız gerekecek. Şimdi de bunları inceleyelim.
+
+## alert() ve confirm()
+Ekrana uyarı ve onay kutuları çıkartırlar.
+```
+>>> pyautogui.alert(text='Başvurunuz Alındı.', title='www.sinanerdinc.com', button="Tamam");
+'Tamam'
+```
+Bu örnekte ekranda başlığı www.sinanerdinc.com olan ve içinde Başvurunuz Alındı yazan bir kutu çıkar altında da Tamam butonu bulunur. Eğer Bu butona basılırsa geri Tamam değeri döner.
+
+```
+>>> pyautogui.confirm(text='Başvurunuzu iptal etmek istediğinizden emin misiniz?', title='www.sinanerdinc.com', buttons=["İptal","Tamam"]);
+'İptal'
+```
+Yine aynı şekilde bu sefer 2 buton çıkar ve hangisine basılırsa onun değeri geri döner.
+
+## prompt() ve password()
+```
+>>> pyautogui.prompt(text='Lütfen adınızı giriniz.', title='www.sinanerdinc.com' , default='')
+'Sinan'
+```
 
 
 
