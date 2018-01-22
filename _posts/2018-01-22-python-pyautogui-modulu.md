@@ -25,13 +25,21 @@ Bugün sizlere acayip eğlenceli bir modül anlatıyorum. Modülün adı **pyaut
 
 # Kurulum
 
+Eğer yüklü değilse ilk önce pip3 yüklemek gerek.
+
+```
+sudo apt-get install python3-pip
+```
+
+komutu ile pip3 yükledikten sonra **pyautogui modülünün kurulumuna** geçelim.
+
 ```
 sudo pip3 install python3-xlib
 sudo apt-get install scrot
 sudo apt-get install python3-tk
 sudo pip3 install pyautogui
 ```
-şeklinde bilgisayarınıza kurabilirsiniz.
+Şeklinde bilgisayarınıza kurabilirsiniz.
 
 ```
 import pyautogui
