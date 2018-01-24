@@ -17,10 +17,10 @@ Bugün sizlere acayip eğlenceli bir modül anlatıyorum. Modülün adı **pyaut
 # İçindekiler
 - [Kurulum](#kurulum)
 - [Genel Fonksiyonlar](#genel-fonksiyonlar)
-- [Mouse Aksiyon Fonksiyonları](#mouse-aksiyon-fonksiyonlar)
-- [Klavye Aksiyon Fonksiyonları](#klavye-aksiyon-fonksiyonlar)
-- [Mesaj Kutusu Fonksiyonları](#mesaj-kutusu-fonksiyonlar)
-- [Ekran Görüntüsü Fonksiyonları](#ekran-grnts-fonksiyonlar)
+- [Mouse Aksiyon Fonksiyonları](#mouse-aksiyon-fonksiyonları)
+- [Klavye Aksiyon Fonksiyonları](#klavye-aksiyon-fonksiyonları)
+- [Mesaj Kutusu Fonksiyonları](#mesaj-kutusu-fonksiyonları)
+- [Ekran Görüntüsü Fonksiyonları](#ekran-görüntüsü-fonksiyonları)
 - [Kaynaklar](#kaynaklar)
 
 # Kurulum
