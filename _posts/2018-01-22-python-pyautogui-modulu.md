@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Python PyAutoGui Modülü
 subtitle: Python ile mouse konumu, tıklama, klavye kontrolü ve ekran görüntüsü alma gibi işlemleri yönetebilir, dilerseniz otomatikleştirebilirsiniz.
 permalink: /python-pyautogui-modulu
