@@ -1,9 +1,9 @@
 ---
 layout: post
 published: true
-title: Python PyAutoGui Modülü
+title: Python PyAutoGui Modülü Kullanımı
 subtitle: Python ile mouse konumu, tıklama, klavye kontrolü ve ekran görüntüsü alma gibi işlemleri yönetebilir, dilerseniz otomatikleştirebilirsiniz.
-permalink: /python-pyautogui-modulu
+permalink: /python-pyautogui-modulu-kullanimi
 image: /img/2018/pythonautogui/python-pyautogui.png
 share-img: /img/2018/pythonautogui/python-pyautogui.png
 tags: [python, development]
@@ -12,7 +12,7 @@ categories:
     - "python"
 ---
 
-Bugün sizlere acayip eğlenceli bir modül anlatıyorum. Modülün adı **pyautogui**, bu modül ile bilgisayarınızdaki birçok işi otomatize edebilirsiniz. Mouse hareketlerini, klavyenizi yönetebilir, ekran görüntüleri alabilir daha birçok işlem yapabilirsiniz.
+Bugün sizlere acayip eğlenceli bir modül anlatıyorum. Modülün adı **pyautogui**, bu modül ile bilgisayarınızdaki birçok işi otomatize edebilirsiniz. Mouse hareketlerinizi, klavyenizi yönetebilir, ekran görüntüleri alabilir birçok işlemi otomatize edebilirsiniz.
 
 # İçindekiler
 - [Kurulum](#kurulum)
