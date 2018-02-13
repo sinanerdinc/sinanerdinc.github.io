@@ -29,6 +29,7 @@ navbar-links:
   Kategoriler:
     - Teknoloji: "http://www.sinanerdinc.com/teknoloji"
     - Python: "http://www.sinanerdinc.com/python"
+    - Linux: "http://www.sinanerdinc.com/linux"
     #- GitHub Pages: "https://pages.github.com/"
   #İletişim: "iletisim"
 
