@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-title: The Silver Searcher Eklentisi
-subtitle: Terminal üzerinden arama yaparken işlerinizi kolaylaştıracak bir eklenti. Daha kolay ve hızlı grep komutunu kullanmanızı sağlar.
+title: The Silver Searcher Paketi Kullanımı
+subtitle: Terminal üzerinden arama yaparken işlerinizi kolaylaştıracak bir paket. Daha kolay ve hızlı grep komutunu kullanmanızı sağlar.
 permalink: /the-silver-searcher-eklentisi
 image: /img/2018/ag.png
 share-img: /img/2018/ag.png
@@ -12,7 +12,7 @@ categories:
     - "linux"
 ---
 
-Terminalden hemen kurulumunu yapabileceğiniz bu eklenti ile bilgisayarınızda daha kolay arama yapabileceksiniz. Arama derken de bahsettiğim aslında bir yazılım projenizde birşey aramak. Normalde grep komutu ile yapabileceğiniz işlemleri sizin için daha kolay bir hale getirmiş olan bu eklentiyi biraz inceleyelim. Bu eklentiye Yazılımcı Grep'i diyebiliriz.
+Terminalden hemen kurulumunu yapabileceğiniz bu paket ile bilgisayarınızda daha kolay arama yapabileceksiniz. Arama derken de bahsettiğim aslında bir yazılım projenizde birşey aramak. Normalde grep komutu ile yapabileceğiniz işlemleri sizin için daha kolay bir hale getirmiş olan bu eklentiyi biraz inceleyelim. Bu eklentiye Yazılımcı Grep'i diyebiliriz.
 
 # Kurulum
 
