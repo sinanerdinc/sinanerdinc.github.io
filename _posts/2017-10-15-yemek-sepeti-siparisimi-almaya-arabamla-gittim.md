@@ -3,7 +3,6 @@ layout: post
 published: true
 title: Yemek Sepeti Siparişimi Almaya Arabamla Gittim
 image: /img/2017/yemeksepeti.jpeg
-tags: [yemeksepeti, şikayet]
 date: 2017-10-14
 categories:
     - "diger"

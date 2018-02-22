@@ -6,7 +6,6 @@ subtitle: Python'da Düzenli İfade (Regular Expression) Kullanımı
 permalink: /python-re-modulu
 image: /img/2018/python-re.png
 share-img: /img/2018/python-re.png
-tags: [python, development]
 date: 2018-01-14
 categories:
     - "python"
