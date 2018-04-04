@@ -6,7 +6,7 @@ subtitle: Python Requests ve BeautifulSoup modülünü kullanarak bot yazabilirs
 permalink: /python-beautifulsoup-egitim-videolari
 image: /img/2018/youtube.png
 share-img: /img/2018/youtube.png
-date: 2018-23-02
+date: 2018-02-23
 categories:
     - "python"
 ---
