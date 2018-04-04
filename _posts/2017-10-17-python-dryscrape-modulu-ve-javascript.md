@@ -6,7 +6,7 @@ subtitle: Projenizde dryscrape modülünü kullanarak javascript desteği kazand
 permalink: /python-dryscrape-modulu-ve-javascript
 image: /img/2017/python-dryscrape.png
 share-img: /img/2017/python-dryscrape.png
-date: 2017-26-10
+date: 2017-10-26
 categories:
     - "python"
 ---
