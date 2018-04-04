@@ -2,6 +2,7 @@
 layout: post
 title: Medium Türkçe kapandı
 image: /img/2017/medium-logo.png
+date: 2017-11-10
 categories:
     - "teknoloji"
 ---
