@@ -6,7 +6,7 @@ subtitle: Modüldeki kullanışlı methodlar
 permalink: /python-random-modulu
 image: /img/2017/python_logo.png
 share-img: /img/2017/python_logo.png
-date: 2017-16-10
+date: 2017-10-16
 categories:
     - "python"
 ---
