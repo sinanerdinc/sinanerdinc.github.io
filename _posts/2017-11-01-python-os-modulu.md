@@ -6,7 +6,7 @@ subtitle: İşletim sistemi işlemlerinizi Python ile yapabilirsiniz.
 permalink: /python-os-modulu
 image: /img/2017/python-os.png
 share-img: /img/2017/python-os.png
-date: 2017-11-06
+date: 2017-06-11
 categories:
     - "python"
 ---
