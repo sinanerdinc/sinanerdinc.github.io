@@ -6,7 +6,7 @@ subtitle: Terminal üzerinden arama yaparken işlerinizi kolaylaştıracak bir p
 permalink: /the-silver-searcher-eklentisi
 image: /img/2018/ag.png
 share-img: /img/2018/ag.png
-date: 2018-02-10
+date: 2018-10-02
 categories:
     - "linux"
 ---
