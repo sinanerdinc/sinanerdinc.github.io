@@ -6,7 +6,7 @@ subtitle: Web isteklerinizi python ile yapın
 permalink: /python-requests-modulu
 image: /img/2017/python-requests.png
 share-img: /img/2017/python-requests.png
-date: 2017-17-10
+date: 2017-10-17
 categories:
     - "python"
 ---
