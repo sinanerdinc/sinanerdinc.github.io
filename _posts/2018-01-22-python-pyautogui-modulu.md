@@ -6,7 +6,7 @@ subtitle: Python ile mouse konumu, tıklama, klavye kontrolü ve ekran görünt�
 permalink: /python-pyautogui-modulu-kullanimi
 image: /img/2018/pythonautogui/python-pyautogui.png
 share-img: /img/2018/pythonautogui/python-pyautogui.png
-date: 2018-22-01
+date: 2018-01-22
 categories:
     - "python"
 ---
