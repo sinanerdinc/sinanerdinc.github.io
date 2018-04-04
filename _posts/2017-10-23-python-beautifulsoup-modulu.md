@@ -6,7 +6,7 @@ subtitle: Html veya Xml parse işlemlerinizi python ile yapabilirsiniz.
 permalink: /python-beautifulsoup-modulu
 image: /img/2017/python-beautifulsoup.png
 share-img: /img/2017/python-beautifulsoup.png
-date: 2017-10-30
+date: 2017-30-10
 categories:
     - "python"
 ---
