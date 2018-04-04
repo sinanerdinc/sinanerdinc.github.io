@@ -4,7 +4,7 @@ published: true
 title: Amazon Kindle’da Reklamları (Special Offers) Kaldırmak
 subtitle: Artık Kindle Reklamsız!
 image: /img/2017/amazon-kindle.jpg
-date: 2017-09-08
+date: 2017-08-09
 categories:
     - "teknoloji"
 ---
