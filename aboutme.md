@@ -11,7 +11,7 @@ Selam ben Sinan.
 ## İlgi Alanlarım
 Genellikle aşağıdaki konular ile ilgili içerikler okuyacaksınız.
 
-- Python
+- [Python Dersleri ve Modülleri](/python-dersleri-ve-modulleri "Python Dersleri ve Modülleri")
 - Linux
 - Php
 - Geliştirici Araçları
