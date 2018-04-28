@@ -442,6 +442,9 @@ footer .theme-by {
     margin-top: 0;
     float: left;
   }
+  .intro-header .page-heading h1 {
+    font-size: 30px !important;
+  }
 }
 /* --- Post and page headers --- */
 
@@ -787,6 +790,9 @@ color: #f1c40f;
     left: 0;
     width: 100%;
     height: 100%;
+}
+i.fa-play-circle{
+  color: red;
 }
 img[src*='#center'] {
     display: block;
