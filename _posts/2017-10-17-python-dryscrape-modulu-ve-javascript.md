@@ -14,6 +14,14 @@ Bir önceki yazımda Python için Requests modülünün özelliklerini ve kullan
 
 İşte bunun için güzel bir modül daha var, bu modülün adı **dryscrape**
 
+{: .box-warning}
+Dryscrape modülü ile ilgili youtube kanalımda bir video hazırladım ve buraya ekledim. İlk önce yazıları okuyup sonra videoyu izlemenizde fayda var.
+
+<div class="youtubeContainer">
+<iframe src="//www.youtube.com/embed/_cnMe6iT_Qs"
+frameborder="0" allowfullscreen class="youtubeVideo"></iframe>
+</div>
+
 ## Kurulum
 Ben pip3 ile kurmuştum, pip3 python3 için paket yöneticisi.
 
