@@ -23,5 +23,5 @@ Bazı içerikler video da barındırıyor. Bu içeriklerin yanında <i class="fa
 </div>
 <div class="col-lg-6">
 <h2>Python Dersleri</h2>
-İçerik Hazırlanıyor.
+<li><a href="/python-virtualenv-kullanimi" title="Python Virtualenv Kullanımı" target="_blank">Python Virtualenv Kullanımı</a></li>
 </div>
