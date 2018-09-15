@@ -4,9 +4,9 @@ published: true
 title: Python Selenium Modülü Kullanımı Ders 1
 subtitle: Python üzerine selenium ve webdriver kurulumunu yaparak, kullanışlı bazı methodları inceliyoruz.
 permalink: /python-selenium-modulu-kullanimi-1
-image: /img/2017/python-beautifulsoup.png
-share-img: /img/2017/python-beautifulsoup.png
-date: 2018-05-13
+image: /img/2018/selenium-ders1.png
+share-img: /img/2018/selenium-ders1.png
+date: 2018-09-14
 categories:
     - "python"
 ---
