@@ -378,10 +378,19 @@ footer .theme-by {
   height: 192px;
   width: 192px;
   margin-top: -35px;
-  filter: grayscale(90%);
 }
 .post-image:hover {
-  filter: grayscale(0%);
+  filter: brightness(80%);
+  transition: 1.10s;
+  -webkit-transition: 1.10s;
+  -moz-transition: 1.10s;
+  -ms-transition: 1.10s;
+  -o-transition: 1.10s;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 .post-image img {
   border-radius: 100px;
