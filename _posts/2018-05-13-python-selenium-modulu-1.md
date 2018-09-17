@@ -48,7 +48,7 @@ browser = webdriver.Chrome(executable_path=driver_path)
 Dikkat ettiyseniz **executable_path** alanına ben chrome driver için indirdiğim dosyanın yolunu tuttuğum **driver_path** değişkenini yazdım. Selenium artık benim hangi driver üzerinden çalışacağımı anlamış oldu. Bunu yazdığınızda herşey başarılı ise bir chrome tarayıcısı açılmış olmalı.
 
 {: .box-note}
-Burda dikkat etmeniz gereken şu, bu klasör yolu linux veya windows için değişiyor. Linux için **/home/sinan/Downloads/selenium/chromedriver** gibi bir şey yazdım ama windows kullanıyorsanız **c:\users\sinan\downloads\chromedriver.exe** gibi birşey olacaktır.
+Burda dikkat etmeniz gereken şu, bu klasör yolu linux veya windows için değişiyor. Linux için **/home/sinan/Downloads/selenium/chromedriver** gibi bir şey yazdım ama windows kullanıyorsanız **C:\\users\\sinan\\downloads\\chromedriver.exe** gibi birşey olacaktır.
 
 Artık driver objesi içerisinde selenium içindeki methodları kullanabiliriz. Şimdi biraz bu methodları inceleyelim.
 
