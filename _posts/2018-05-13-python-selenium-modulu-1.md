@@ -12,6 +12,11 @@ categories:
 ---
 Selenium, bilgisayarınıza yükleyeceğiniz bir driver yardımı ile ekrana chrome, firefox gibi bir tarayıcı açarak, gerçek bir insan gibi istediğiniz tüm işlemleri programlama dili yardımıyla çalıştırmanızı sağlayan bir araçtır. Siz bir tarayıcı açtığınızda bir web sitesine bağlanıp belirli alanlara tıklayarak geziniyor, bazı formları dolduruyor veya butonlara tıkladığınızda bazı yerlerin ekrana gelmesini bekliyorsunuz. İşte tüm bu aksiyonları, sizin yerinize python kodları yardımı ile yapan bir ürün hayal edin, bu modülü öğrendiğinizde düzenli yaptığınız işler için otomasyonlar yazabilir veya bir bot yazıyorsanız javascript ile ilgili problemleriniz varsa, bunlara çare bulabilirsiniz.
 
+<div class="youtubeContainer">
+<iframe src="//www.youtube.com/embed/XvwPdJz4bJo"
+frameborder="0" allowfullscreen class="youtubeVideo"></iframe>
+</div>
+
 ## Kurulum
 Ben pip3 ile kurmuştum, pip3 python3 için paket yöneticisi. Eğer size pip3 modülü yüklü değil ise,
 
