@@ -60,6 +60,12 @@ source bin/activate
 ```
 komutunu çalıştırıyorum. Bu komutu çalıştırmak için geliştirme ortamı için oluşturduğum klasör içerisinde olmam gerek. eğer bu klasör içerisinde değilsem **source ornekProje/bin/activate** gibi bir komut yazmam gerekirdi.
 
+Tam bu esnada eğer sanal bir geliştirme ortamı kurarken bilgisayarımdaki özel bir python sürümü üzerinden kurulum yapmak istersem **--python** parametresi ile ilgili versiyonun yolunu vermem gerek. Örnek olarak;
+```
+virtualenv --python=/usr/bin/python2.7 ornekProje
+```
+Bu şekilde de python 2.7 ile çalışabilecek bir sanal geliştirme ortamı oluşturmuş oldum.
+
 Bu komutu yazdığınızda terminaliniz, parantez içerisinde (ornekProje) yazan bir hale gelecek. Artık geliştirme ortamınız hazır. Artık burada **pip3 ile istediğiniz paketi** kurabilirsiniz. Burda kurduğunuz paketler bilgisayarınıza yüklenmez sadece bu projeye yüklenir ve projenizi sildiğinizde de bilgisayarınızdan silinmiş olur.
 
 Eğer bu geliştirme ortamından çıkmak isterseniz de;
