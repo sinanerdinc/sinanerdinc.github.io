@@ -26,7 +26,7 @@ Genellikle aşağıdaki konular ile ilgili içerikler okuyacaksınız.
 | Konu | Ne zaman  | Nerede |
 |--|--|--|
 | Python ve Selenium Webdriver ile Test Otomasyonu | 11.07.2018 | [QAIst](https://www.meetup.com/QAIstMeetup/events/252359014/) |  
-| Python ve Selenium Webdriver ile Test Otomasyonu | 16.08.2018 | [Istanbul Coders](http://istanbulcoders.org/meetings/2018/08/16/python-selenium-test-otomasyon/)  |
+| Python ve Selenium ile Test Otomasyonu | 16.08.2018 | [Istanbul Coders](http://istanbulcoders.org/meetings/2018/08/16/python-selenium-test-otomasyon/)  |
 
 
 ## İletişim
