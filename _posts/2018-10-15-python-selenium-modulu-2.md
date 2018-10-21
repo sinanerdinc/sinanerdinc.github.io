@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 title: Python Selenium Modülü Kullanımı Ders 2
 subtitle: Sayfadaki HTML elemanlarını seçebileceğimiz methodları inceliyoruz. (Find Element)
 permalink: /python-selenium-modulu-kullanimi-2
