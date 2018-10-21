@@ -5,13 +5,13 @@ subtitle: <i class="fa fa-hand-peace-o fa-2x"></i> Hi there
 permalink: hakkimda.html
 ---
 
-Selam ben Sinan. 
+Selam, ben Sinan Erdinç.
 
-Daha önce ideasoft.com da çalışan, şimdi ise trendyol çalışanı olan, özellikle e-ticaret tabanlı web uygulama geliştirme alanında 7+ yıllık tecrübeye sahip, yazılımın yaşam döngüsünündeki parametrelere hakim, hiperaktif ve aşırı üretken ekiplerle çalışmada tutkulu bir Test Otomasyon Mühendisiyim.
+Trendyol'da çalışan, özellikle e-ticaret tabanlı web uygulama geliştirme alanında 7+ yıllık tecrübeye sahip, yazılımın yaşam döngüsünündeki tüm parametrelere hakim, hiperaktif ve aşırı üretken ekiplerle çalışmada tutkulu bir Test Otomasyon Mühendisiyim.
 
 
 ## İlgi Alanlarım
-Genellikle aşağıdaki konular ile ilgili içerikler okuyacaksınız.
+İlgi alanlarım şunlar, ve genellikle bu konular ile ilgili içerikler yazmaya gayret ediyorum.
 
 - [Python Dersleri ve Modülleri](/python-dersleri-ve-modulleri "Python Dersleri ve Modülleri")
 - Linux
@@ -22,6 +22,7 @@ Genellikle aşağıdaki konular ile ilgili içerikler okuyacaksınız.
 
 
 ## Sunumlarım
+Kullanmayı sevdiğim, tecrübe ettiğim ürün veya araçları şuralarda anlattım.
 
 | Konu | Ne zaman  | Nerede |
 |--|--|--|
