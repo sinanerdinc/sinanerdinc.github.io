@@ -1,12 +1,12 @@
 ---
 layout: post
-published: false
+published: true
 title: Python Selenium Modülü Kullanımı Ders 2
 subtitle: Sayfadaki HTML elemanlarını seçebileceğimiz methodları inceliyoruz. (Find Element)
 permalink: /python-selenium-modulu-kullanimi-2
-image: /img/2018/selenium-ders1.png
-share-img: /img/2018/selenium-ders1.png
-date: 2018-10-15
+image: /img/2018/selenium-ders2.png
+share-img: /img/2018/selenium-ders2.png
+date: 2018-11-20
 categories:
     - "python"
 ---
@@ -137,8 +137,16 @@ driver.find_element_by_link_text("Anasayfa")
 ```
 Bu şekilde metni **Anasayfa** olan bağlantı adresini seçmiş olduk.
 
+### 7- find_element_by_partial_link_text()
+Yukarıdaki örnek içerisinde belirli bir metne sahip bağlantıyı seçiyorduk. Bu method ile de metnin içerisinde geçen herhangi bir değer ile arama yapabiliyorsunuz.
 
-### 7- find_element_by_xpath()
+```
+driver.find_element_by_partial_link_text("Anas")
+driver.find_element_by_partial_link_text("sayfa")
+```
+Bu şekide aramalar da yine **Anasayfa** olan bağlantı adresini seçmenize imkan tanır.
+
+### 8- find_element_by_xpath()
 
 Eğer xpath konusunda bir uzmanlığınız yoksa, ve hiçbir şekilde o HTML elemanına diğer methodlar ile ulaşamazsanız ancak o zaman bunu kullanın. Çünkü xpath eüer en basit yazılımı ile kullanılırsa çok kırılgandır. Xpath en basit kullanımı ile en baştaki HTML elemanından, aramak istediğiniz yere kadar olan tüm yolları seçer.
 
@@ -153,7 +161,7 @@ driver.find_element_by_xpath("/html/body/div[1]/div[2]/div/ul/li[4]/ul/li[2]/a")
 ```
 Bu şekilde en basit yöntem ile sayfada html elemanından itibaren tüm etiket yolu **/html/body/div[1]/div[2]/div/ul/li[4]/ul/li[2]/a** olan bağlantı adresini seçmiş olduk.
 
-### 7.1 Xpath İleri Seviye Kullanımı
+### 8.1- Xpath İleri Seviye Kullanımı
 
 Şimdi biraz da xpath için güçlü yönlerinden bahsedelim.
 
@@ -197,6 +205,30 @@ driver.find_element_by_xpath("//a[contains(text(),'Anasayfa')]")
 ```
 Yani class veya id değeri üzerinden bir arama yapabilir veya bağlantı metni Anasayfa olan linki bul diyebilirdik. Eğer xpath kullanacaksanız bu şekilde kullanın, direkt olarak en baştan ilgili html elemanına direkt giden bir yol kullanmayın.
 
+### 9- Aradığımız değer 1'den fazla ise
+Buraya kadar hep sayfada tek bir değer aradık. Aradığımız değer sayfada birden fazla olsa bile ilk bulunan değer bize cevap olarak geri döndü. Sayfada bulmak istediğim birden fazla li, div, ul veya link varsa ne olacak?
 
+Selenium elbette bunu da karşılıyor. Yukarıda kullandığımız tüm methodların çoğulları da mevcut, yani ilk bulunan değil, sayfada aradığınız desene uyan kaç tane sonuç varsa hepsini dönebilen halleri. Bu methodlar da şunlar
+
+- find_elements_by_class_name() 
+- find_elements_by_css_selector()
+- find_elements_by_id()
+- find_elements_by_link_text()
+- find_elements_by_name()
+- find_elements_by_partial_link_text()
+- find_elements_by_tag_name()
+- find_elements_by_xpath()
+
+Dikkat ettiyseniz sadece find_element yerine find_elements olarak başlıyor. Başka bir farkı yok. Kullanımı yine aynı, fakat bu çoğul aramaları kullanırsanız size geriye bir liste dönecek. Bu nedenle dönen listeyi bir döngüye sokarak işlem yapmanız gerekecek.
+
+```
+labels = driver.find_elements_by_tag_name("label")
+for label in labels:
+        print(label.text)
+
+```
+Bu şekilde sayfada **<label>** ile başlayan değerlerin hepsini buldum ve labels adında bir listeye atadım. Sonra da döngüyle bu liste içerisindeki tüm elemanların sahip olduğu metni ekrana bastım.
+    
+    
 {: .box-note}
-Bir sonraki dersimiz, sayfada seçtiğimiz html elemanları ile aksiyon almak üzerine olacak. Tıklamak, içerisine birşey yazmak v.s.
+Artık sayfada istediğimiz bir alanı seçebiliyoruz, bir sonraki dersimiz de, sayfada seçtiğimiz html elemanları ile aksiyon almak üzerine olacak. Tıklamak, içerisine birşey yazmak v.s.
