@@ -187,7 +187,7 @@ driver.find_element_by_xpath("//button[@data='submit']")
 <li><a href="/">Anasayfa</a></li>
 <li><a href="hakkimda">Hakkımda</a></li>
 ```
-şöyle bir html kod içerisinden sadece Python metnine sahip **<li>** değerini seçmek istiyoruz.
+şöyle bir html kod içerisinden sadece Python metnine sahip **li** değerini seçmek istiyoruz.
 
 ```
 driver.find_element_by_xpath("//li/a[contains(text(),'Python')]")
