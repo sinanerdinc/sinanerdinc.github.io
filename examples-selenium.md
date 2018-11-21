@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Selenium Çalışma Örnekleri
 subtitle: Selenium dersi için methodları test etmek istediğinizde kullanabileceğiniz çalışma ortamıdır.
 permalink: selenium.html
