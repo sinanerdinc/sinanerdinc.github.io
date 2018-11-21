@@ -2,7 +2,7 @@
 layout: base
 title: Selenium Çalışma Örnekleri
 subtitle: Selenium Çalışma Örnekleri
-permalink: examples/selenium.html
+permalink: selenium.html
 ---
 
 <style>
