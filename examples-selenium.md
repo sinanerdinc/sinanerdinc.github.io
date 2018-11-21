@@ -1,16 +1,35 @@
 ---
 layout: post
 title: Selenium Çalışma Örnekleri
-subtitle: Selenium Çalışma Örnekleri
+subtitle: Selenium dersi için methodları test etmek istediğinizde kullanabileceğiniz çalışma ortamıdır.
 permalink: selenium.html
 ---
 
-## Selenium Örnekleri
-Selenium konusunu anlatırken kullanacağım örnek html elemanlarını burada tutuyorum.
+<style>
+  .rowbg {
+  background: #f8f9fa;
+}
+
+.border1px {
+  border: solid 1px #6c757d;
+}
+p {
+  font-style: italic;
+}
+label{
+  display: table-header-group;
+}
+
+span{
+  display: table-header-group;
+}
+
+</style>
+
 
 <div class="container">
-  <div class="row">
-    <div class="col">
+  <div class="row rowbg">
+    <div class="col-lg-3">
       <ul class="ornek1">
       <p>
       find_element_by_id
@@ -20,7 +39,7 @@ Selenium konusunu anlatırken kullanacağım örnek html elemanlarını burada t
       <li id="teknoloji">Teknoloji</li>
       </ul>
     </div>
-    <div class="col">
+    <div class="col-lg-3 border1px">
       <ul class="ornek2">
       <p>
      find_element_by_class_name
@@ -30,8 +49,7 @@ Selenium konusunu anlatırken kullanacağım örnek html elemanlarını burada t
       <li class="teknoloji">Teknoloji</li>
       </ul>
     </div>
-    
-    <div class="col">
+    <div class="col-lg-3 border1px">
       <p>
       find_element_by_css_selector
       </p>
@@ -42,8 +60,8 @@ Selenium konusunu anlatırken kullanacağım örnek html elemanlarını burada t
     </div>
   </div>
   
-  <div class="row">
-   <div class="col">
+  <div class="row rowbg">
+   <div class="col-lg-3 border1px">
       <p>
       find_element_by_css_selector
       </p>
@@ -53,18 +71,16 @@ Selenium konusunu anlatırken kullanacağım örnek html elemanlarını burada t
           <label data="site">www.sinanerdinc.com</label>
           <label data="menu1">Menü 1</label>
           <label data="menu2">Menü 2</label>
-          
         </fieldset>
     </div>
-    <div class="col">
+    <div class="col-lg-3 border1px">
       <p>
       find_element_by_name
       </p>
        <span name="text1">Selenium modülü öğreniyorum.</span>
        <span name="text2">Python lover.</span>
-       
     </div>
-    <div class="col">
+    <div class="col-lg-3 border1px">
       <p>
       find_element_by_xpath
       </p>
@@ -73,11 +89,9 @@ Selenium konusunu anlatırken kullanacağım örnek html elemanlarını burada t
         <ul>
         <li>Hakkımda</li>
         <li>İletişim</li>
-        
         </ul>
         </div>
        <button data="submit">Onayla</button>
-        
       </div>
     </div>
   </div>  
