@@ -64,3 +64,17 @@ Bu örnek içerisinde python resmi sitesine bağlandım, burdaki güncel iş ila
 
 {: .box-note}
 Kodlar: https://github.com/sinanerdinc/ParseHtml/blob/master/pythonJobs.py
+
+
+# Örnek 4
+
+{: .box-note}
+Site: https://www.n11.com
+
+
+<div class="youtubeContainer">
+<iframe src="//www.youtube.com/embed/CxaT-jqp3Is"
+frameborder="0" allowfullscreen class="youtubeVideo"></iframe>
+</div>
+
+Bu örnek içerisinde n11 sitesine bağlandım ve listelenen ürünleri, ardından ürünler içerisindeki ürün özelliklerini çektim.
