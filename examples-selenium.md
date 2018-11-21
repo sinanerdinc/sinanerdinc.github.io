@@ -82,4 +82,3 @@ Selenium konusunu anlatırken kullanacağım örnek html elemanlarını burada t
     </div>
   </div>  
 </div>
-<footer> Tüm hakları saklıdır. sinanerdinc.com  - <a href="http://www.sinanerdinc.com" title="sinan erdinç websitesi">Anasayfa</a> </footer>
