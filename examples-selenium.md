@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: documentation
 title: Selenium Çalışma Örnekleri
 subtitle: Selenium Çalışma Örnekleri
 permalink: selenium.html
