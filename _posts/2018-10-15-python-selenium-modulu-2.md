@@ -10,13 +10,13 @@ date: 2018-11-20
 categories:
     - "python"
 ---
-Bir önceki [Selenium Modülü Ders 1](https://www.sinanerdinc.com/python-selenium-modulu-kullanimi-1) yazımda chrome webdriver üzerinden python selenium modülünü kullanmaya başlamıştık. Şimdi de açtığımız sayfa içerisindeki HTML elemanlarını seçebileceğimiz methodları inceleyeceğiz.
+Bir önceki [Selenium Modülü Ders 1](https://www.sinanerdinc.com/python-selenium-modulu-kullanimi-1) yazımda chrome webdriver üzerinden python selenium modülünü kullanmaya başlamıştık. Şimdi de açtığımız sayfa içerisindeki HTML elemanlarını seçebileceğimiziz methodları inceleyeceğiz.
 
 Bu konu literatürde **Locating Elements** adı ile anılır. Eğer bu konuda farklı araştırmalar yapmak isterseniz, arama motorlarında **Selenium Webdriver Locating Elements** şeklinde veya benzer aramalar yapabilirsiniz.
 
 ## Belirli bir alanın HTML kodlarına ulaşmak
 
-Yapmak istediğimizi kafamızda canlandırmak için önce biraz özetleyelim. Bir önceki ders içeriğinde öğrendiğimiz gibi selenium ile bir tarayıcı açtık, bir siteye girdik, şimdi bu sitede belirli bir alanlara tıklama, inputların veya text elemanlarının içerisini doldurma işlevi yapacağız. Bir siteye girdikten sonra kullanıcı adı ve şifre girip sonra giriş yap butonuna tıklamak gibi.
+Yapmak istediğimizi kafamızda canlandırmak için önce biraz özetleyelim. Bir önceki ders içeriğinde öğrendiğimiz gibi selenium ile bir tarayıcı açtık, bir siteye girdik, şimdi bu sitede neler yapabiliriz düşünelim, belirli bir alana veya alanlaralara tıklayabiliriz, inputların veya text elemanlarının içerisini doldurabiliriz, kullanıcı adı ve şifre girip sonra giriş yap butonuna tıklamak gibi.
 
 Bu tür işlemler için ilerleyeceğimiz yol şu, ilk önce nerde ne işlem yapacak ise oranın html elemanını seçmemiz gerek, ardından python kodları ile bu seçtiğim yerde şu şu işlemleri yap diye yönlendirme yapabiliriz.Tabii ki selenium kullanarak. Bunun için de ilgili alanın html elemanlarına ulaşmak gerekiyor, neyse ki bu çok kolay bir işlem.
 
@@ -41,7 +41,12 @@ driver = webdriver.Chrome()
 driver.find_element_by_id("mousehover")
 ```
 
-Bu şekilde id değeri **mousehover** olan alanı seçmiş olduk. Seçtik ama herhangi birşey olmadı. Ekrana birşey yazmadım, tıklamadım v.s. Merak etmeyin seçtikten sonra yapabileceğimiz işlemlerden de bahsedeceğim. Şuan sadece seçme işlemini yapıyoruz.
+Bu şekilde id değeri **mousehover** olan alanı seçmiş olduk. Seçtik ama herhangi birşey olmadı. Ekrana birşey yazmadım, tıklamadım v.s. Merak etmeyin seçtikten sonra yapabileceğimiz işlemlerden de bahsedeceğim. Şuan sadece seçme işlemini yapıyoruz. Ancak doğru değeri seçip seçmediğimizi anlamak için dilerseniz **text** methodunu kullanalım. Bu bize seçtiğimiz alan içerisindeki metni verir.
+
+```
+driver.find_element_by_id("mousehover").text
+```
+değeri bana **Sinan** metnini dönecektir. Seçtiğiniz değer içerisinde bir metin yazıyorsa bunu her zaman kullanabilir ve doğru yeri seçip seçmediğinizi anlayabilirsiniz.
 
 
 ### 2- find_element_by_class_name()
@@ -219,7 +224,7 @@ Selenium elbette bunu da karşılıyor. Yukarıda kullandığımız tüm methodl
 - find_elements_by_tag_name()
 - find_elements_by_xpath()
 
-Dikkat ettiyseniz sadece find_element yerine find_elements olarak başlıyor. Başka bir farkı yok. Kullanımı yine aynı, fakat bu çoğul aramaları kullanırsanız size geriye bir liste dönecek. Bu nedenle dönen listeyi bir döngüye sokarak işlem yapmanız gerekecek.
+Dikkat ettiyseniz sadece **find_element** yerine **find_elements** olarak başlıyor. Başka bir farkı yok. Kullanımı yine aynı, fakat bu çoğul aramaları kullanırsanız size geriye bir liste dönecek. Bu nedenle dönen listeyi bir döngüye sokarak işlem yapmanız gerekecek.
 
 ```
 labels = driver.find_elements_by_tag_name("label")
@@ -227,7 +232,7 @@ for label in labels:
         print(label.text)
 
 ```
-Bu şekilde sayfada **<label>** ile başlayan değerlerin hepsini buldum ve labels adında bir listeye atadım. Sonra da döngüyle bu liste içerisindeki tüm elemanların sahip olduğu metni ekrana bastım.
+Bu şekilde sayfada **label** ile başlayan değerlerin hepsini buldum ve labels adında bir listeye atadım. Sonra da döngüyle bu liste içerisindeki tüm elemanların sahip olduğu metni ekrana bastım.
     
     
 {: .box-note}
