@@ -1,5 +1,5 @@
 ---
-layout: documentation
+layout: post
 title: Selenium Çalışma Örnekleri
 subtitle: Selenium Çalışma Örnekleri
 permalink: selenium.html
