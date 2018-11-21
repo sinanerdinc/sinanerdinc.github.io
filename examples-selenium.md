@@ -7,34 +7,7 @@ permalink: selenium.html
 
 ## Selenium Örnekleri
 Selenium konusunu anlatırken kullanacağım örnek html elemanlarını burada tutuyorum.
-<style>
-  .row {
-  background: #f8f9fa;
-  margin-top: 20px;
-}
 
-.col {
-  border: solid 1px #6c757d;
-  padding: 10px;
-}
-p {
-  font-style: italic;
-}
-label{
-  display: table-header-group;
-}
-
-span{
-  display: table-header-group;
-}
-
-footer{
-    display: table;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-</style>
 <div class="container">
   <div class="row">
     <div class="col">
