@@ -16,14 +16,18 @@ common-js:
 <!DOCTYPE html>
 <html lang="en">
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          {% include gtm_body.html %}
 
-    {% include gtm_body.html %}
+          {{ content }}
 
-    {{ content }}
+          {% include footer.html %}
 
-    {% include footer.html %}
-
-    {% include footer-scripts.html %}
-
+          {% include footer-scripts.html %}
+          <div>
+         </div>
+       </div>
   </body>
 </html>
