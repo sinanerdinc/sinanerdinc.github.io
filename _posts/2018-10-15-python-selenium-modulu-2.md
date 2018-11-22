@@ -14,6 +14,11 @@ Bir önceki [Selenium Modülü Ders 1](https://www.sinanerdinc.com/python-seleni
 
 Bu konu literatürde **Locating Elements** adı ile anılır. Eğer bu konuda farklı araştırmalar yapmak isterseniz, arama motorlarında **Selenium Webdriver Locating Elements** şeklinde veya benzer aramalar yapabilirsiniz.
 
+<div class="youtubeContainer">
+<iframe src="//www.youtube.com/embed/rFBeqxBGj4g"
+frameborder="0" allowfullscreen class="youtubeVideo"></iframe>
+</div>
+
 ## Belirli bir alanın HTML kodlarına ulaşmak
 
 Yapmak istediğimizi kafamızda canlandırmak için önce biraz özetleyelim. Bir önceki ders içeriğinde öğrendiğimiz gibi selenium ile bir tarayıcı açtık, bir siteye girdik, şimdi bu sitede neler yapabiliriz düşünelim, belirli bir alana veya alanlaralara tıklayabiliriz, inputların veya text elemanlarının içerisini doldurabiliriz, kullanıcı adı ve şifre girip sonra giriş yap butonuna tıklamak gibi.
