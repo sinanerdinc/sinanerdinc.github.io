@@ -19,6 +19,9 @@ Bazı içerikler video da barındırıyor. Bu içeriklerin yanında <i class="fa
 <li><i class="fa fa-play-circle fa-spin fa-1x fa-fw"></i> <a href="/python-beautifulsoup-egitim-videolari" target="_blank">Beautifulsoup Modülü Eğitim Videoları</a></li>
 <li><a href="/python-re-modulu" target="_blank">Python Re Modülü</a></li>
 <li><a href="/python-pyautogui-modulu-kullanimi" target="_blank">Python Pyautogui Modülü</a></li>
+<li><i class="fa fa-play-circle fa-spin fa-1x fa-fw"></i> <a href="/python-selenium-modulu-kullanimi-1" target="_blank">Python Selenium Modülü Ders 1</a></li>
+<li><i class="fa fa-play-circle fa-spin fa-1x fa-fw"></i> <a href="/python-selenium-modulu-kullanimi-2" target="_blank">Python Selenium Modülü Ders 2</a></li>
+
 
 </div>
 <div class="col-lg-6">
