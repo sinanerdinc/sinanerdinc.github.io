@@ -11,17 +11,16 @@ Bazı içerikler video da barındırıyor. Bu içeriklerin yanında <i class="fa
 
 <div class="col-lg-6">
 <h2> Python Modülleri</h2>
-<li><a href="/python-os-modulu" target="_blank">Python Os Modülü</a></li>
-<li><a href="/python-random-modulu" target="_blank">Python Random Modülü</a></li>
-<li><i class="fa fa-play-circle fa-spin fa-1x fa-fw"></i> <a href="/python-requests-modulu" target="_blank">Python Requests Modülü</a></li>
-<li><i class="fa fa-play-circle fa-spin fa-1x fa-fw"></i> <a href="/python-dryscrape-modulu-ve-javascript" target="_blank">Python Dryscrape Modülü</a></li>
-<li><a href="/python-beautifulsoup-modulu" target="_blank">Python Beautifulsoup Modülü</a></li>
-<li><i class="fa fa-play-circle fa-spin fa-1x fa-fw"></i> <a href="/python-beautifulsoup-egitim-videolari" target="_blank">Beautifulsoup Modülü Eğitim Videoları</a></li>
-<li><a href="/python-re-modulu" target="_blank">Python Re Modülü</a></li>
-<li><a href="/python-pyautogui-modulu-kullanimi" target="_blank">Python Pyautogui Modülü</a></li>
-<li><i class="fa fa-play-circle fa-spin fa-1x fa-fw"></i> <a href="/python-selenium-modulu-kullanimi-1" target="_blank">Python Selenium Modülü Ders 1</a></li>
-<li><i class="fa fa-play-circle fa-spin fa-1x fa-fw"></i> <a href="/python-selenium-modulu-kullanimi-2" target="_blank">Python Selenium Modülü Ders 2</a></li>
-
+<li><a href="/python-os-modulu" target="_blank" title="python os modülü kullanımı">Python Os Modülü</a></li>
+<li><a href="/python-random-modulu" target="_blank" title="python random modülü kullanımı">Python Random Modülü</a></li>
+<li><i class="fa fa-play-circle fa-spin fa-1x fa-fw"></i> <a href="/python-requests-modulu" target="_blank" title="python requests modülü kullanımı">Python Requests Modülü</a></li>
+<li><i class="fa fa-play-circle fa-spin fa-1x fa-fw"></i> <a href="/python-dryscrape-modulu-ve-javascript" target="_blank" title="python dryscrape modülü">Python Dryscrape Modülü</a></li>
+<li><a href="/python-beautifulsoup-modulu" target="_blank" title="python beautifulsoup modülü kullanımı">Python Beautifulsoup Modülü</a></li>
+<li><i class="fa fa-play-circle fa-spin fa-1x fa-fw"></i> <a href="/python-beautifulsoup-egitim-videolari" target="_blank" title="beautifulsoup modülü eğitim videoları">Beautifulsoup Modülü Eğitim Videoları</a></li>
+<li><a href="/python-re-modulu" target="_blank" title="python re modülü">Python Re Modülü</a></li>
+<li><a href="/python-pyautogui-modulu-kullanimi" target="_blank" title="python pyautogui modülü kullanımı">Python Pyautogui Modülü</a></li>
+<li><i class="fa fa-play-circle fa-spin fa-1x fa-fw"></i> <a href="/python-selenium-modulu-kullanimi-1" target="_blank" title="python selenium modülü kullanımı ders 1">Python Selenium Modülü Ders 1</a></li>
+<li><i class="fa fa-play-circle fa-spin fa-1x fa-fw"></i> <a href="/python-selenium-modulu-kullanimi-2" target="_blank" title="python selenium modülü kullanımı ders 2">Python Selenium Modülü Ders 2</a></li>
 
 </div>
 <div class="col-lg-6">
