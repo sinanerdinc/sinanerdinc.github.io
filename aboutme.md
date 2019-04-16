@@ -30,6 +30,8 @@ Kullanmayı sevdiğim, tecrübe ettiğim ürün veya araçları şuralarda anlat
 | Python ve Selenium ile Test Otomasyonu | 16.08.2018 | [Istanbul Coders](http://istanbulcoders.org/meetings/2018/08/16/python-selenium-test-otomasyon/)  |
 | Python Behave Modülü ile BDD'ye Giriş | 14.11.2018 | [QAIst](https://www.meetup.com/QAIstMeetup/events/255804831/)  |
 | Robot Framework ve Selenium ile Test Otomasyonuna Giriş | 27.02.2019 | [Robot Framework Turkey](https://www.meetup.com/Robot-Framework-Turkey/events/258785501/)  |
+| İleri Seviye Robot Framework Kullanımı | 10.04.2019 | [Robot Framework Turkey](https://www.meetup.com/Robot-Framework-Turkey/events/260304675/)  |
+| Robot Framework Quick Start and Best Practice | 16.04.2019 | [TestHive](https://www.meetup.com/TestHive/events/260563956/)  |
 
 
 ## İletişim
