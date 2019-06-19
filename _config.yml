@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://www.sinanerdinc.com"
+url: "https://www.sinanerdinc.com"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -24,12 +24,12 @@ description: E-ticaret, python, php, linux, teknoloji ve geliştirici araçları
 
 # List of links in the navigation bar
 navbar-links:
-  Anasayfa: "https://sinanerdinc.github.io/"
+  Anasayfa: "https://www.sinanerdinc.com"
   Hakkımda: "hakkimda"
   Kategoriler:
-    - Teknoloji: "http://www.sinanerdinc.com/teknoloji"
-    - Python: "http://www.sinanerdinc.com/python"
-    - Linux: "http://www.sinanerdinc.com/linux"
+    - Teknoloji: "https://www.sinanerdinc.com/teknoloji"
+    - Python: "https://www.sinanerdinc.com/python"
+    - Linux: "https://www.sinanerdinc.com/linux"
     #- GitHub Pages: "https://pages.github.com/"
   #İletişim: "iletisim"
 
