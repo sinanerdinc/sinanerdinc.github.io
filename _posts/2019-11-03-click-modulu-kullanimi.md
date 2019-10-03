@@ -17,7 +17,7 @@ Terminal üzerinde bir python betiğini çalıştırmak için
 python app.py
 python3 app.py
 ```
-gibi python versiyonunuza göre değişen bir komut kullanıyorsunuz. Bu komutlar sayesinde yazdığınız kodlar çalışıyor ve ekrana birşey yazdırmışsanız, terminalde onları görebiliyorsunuz. Çoğu zaman, yazdığınız fonksiyonlar birer parametre alacak ve bu da betik içerisinden gönderilmiş olacak, fakat sizin ihtiyacınız olan terminalden betiğinize bir parametre göndermek.İşte bu noktada click modülünü bu süreci çok kolaylaştırıyor.
+gibi python versiyonunuza göre değişen bir komut kullanıyorsunuz. Bu komutlar sayesinde yazdığınız kodlar çalışıyor ve ekrana birşey yazdırmışsanız, terminalde onları görebiliyorsunuz. Çoğu zaman, yazdığınız fonksiyonlar birer parametre alacak ve bu da betik içerisinden gönderilmiş olacak, fakat sizin ihtiyacınız olan terminalden betiğinize bir parametre göndermek.İşte bu noktada **click modülü** bu süreci çok kolaylaştırıyor.
 
 Beraber terminalde çalışan basit bir uygulama yapalım.
 
@@ -35,11 +35,11 @@ check("http://www.sinanerdinc.com")
 ```     
 Bu uygulama, girdiğiniz bir bağlantı adresine GET isteği atıyor, eğer http status 200 dönerse sayfanın açıldığını söylüyor, eğer 200 haricinde bir kod dönerse sayfanın bulunamadığını söylüyor.
 
-Herşey buraya kadar çok güzel, python yazmak için kullandığınız editörde, url adresini kısmını değiştirip çalıştırıyor hayatımıza devam ediyorsunuz.  Peki bu python betiği bir sunucuda olsa çalıştırmak için ne yapacaksınız?
+Herşey buraya kadar çok güzel, sinanerdinc.com adresi kontrol ediliyor sadece, siz bu adresi değiştirip değiştirip çalıştırıyor hayatımıza devam ediyorsunuz.  Peki bu python betiği bir sunucuda olsa çalıştırmak için ne yapacaksınız?
 ```
 python3 check.py
 ```
-yazacaksınız. Gelelim problem olan alana, ben farklı siteler için bu betiği çalıştırmak istediğimde her seferinde bu betiğin içerisindeki url kısmını değiştirip kaydetmek istemiyorum, direkt olarak terminal üzerinden bir parametre geçmek istiyorum. Yani şöyle kullanmak istiyorum.
+yazacaksınız. Peki ben farklı siteler için bu betiği çalıştırmak istediğimde her seferinde bu betiğin içerisindeki sinanerdinc.com yazan kısmı değiştirip kaydetmen mi gerekiyor? Direkt olarak terminal üzerinden bir parametre geçemez miyim Örnek olarak şöyle kullanmak istiyorum.
 ```
 python3 check.py --url http://www.sinanerdinc.com
 ```
@@ -67,16 +67,14 @@ ardından bu modülü kullanmak için
 ```
 @click.command()
 ```
-şeklinde bir **decorator** eklemeniz gerekiyor. Son olarak ise, hangi fonksiyonunuz terminalden parametre alsın istiyorsanız o fonksiyonunuzun üzerine
+şeklinde bir **decorator** eklemeniz gerekiyor. Bunu eklemeniz şart.Son olarak ise, hangi fonksiyonunuz terminalden parametre alsın istiyorsanız o fonksiyonunuzun üzerine
 ```
 @click.option("--url", default="http://www.sinanerdinc.com", prompt="Link", help="Kontrol etmek istediğiniz bağlantı adresini giriniz.")
 ```
 ekleyebilirsiniz. Biraz burayı açalım,
- - **--url** alanı, terminalden vereceğimiz parametrenin önüne yazmamız gereken metni ifade ediyor ve ayrıca python betiğinizde url adında   bir değişken oluşturur.
+ - **--url** alanı, terminalden vereceğimiz parametrenin önüne yazmamız gereken metni ifade ediyor ve ayrıca python betiğinizde fonksiyon içerisine url adında bir parametre geçer. Siz bu alana **--name** yazarsanız, fonksiyona **name** adında bir parametre geçer.
   - **default** alanı, eğer terminalden bir parametre göndermezsem, standart olarak bunu kabul et demek.
-  - **prompt** alanı, eğer terminalden bir parametre göndermezsem ve default özelliğini kullanmamışsam, direkt olarak terminal benden bu
-   prompt alanına yazdığım metni gösterip benden içerisini doldurmamı
-   bekliyor. Yani **input("Link")** kullanmışız gibi.
+  - **prompt** alanı, eğer terminalden bir parametre göndermezsem ve default özelliğini kullanmamışsam, direkt olarak terminal benden bu prompt alanına yazdığım metni gösterip benden içerisini doldurmamı bekliyor. Yani **input("Link")** kullanmışız gibi.
   - **help** alanı, terminalden betiğinizi çalıştırırken --help komutunu kullandığınızda, açıklama olarak istenilen parametreleri ve bu alana yazdığınız metni gösterir.
 ```
 Options:
@@ -96,14 +94,41 @@ import requests
 def check(url):  
     r = requests.get(url)  
     if r.status_code == 200:  
-        print("website is online")  
+        print("Girdiğiniz sayfa açılıyor.")  
     else:  
-        print("website is offline")  
+        print("Böyle bir sayfa bulunamadı.")
   
   
 check()
 ```
 
 {: .box-note}
-check() fonksiyonuna artık **url** parametresi göndermiyorum. Artık click modülü bizim yerimize bunu gönderiyor.
+check() fonksiyonuna artık **url** parametresi göndermiyorum. Artık click modülü benim yerime bunu gönderiyor.
 
+Projeyi biraz daha genişletelim isterseniz, bir de http status code değeri alalım terminalden ve ilgili siteye GET isteği attığımda verdiğim status kodun gelip gelmediğini kontrol ettirelim.
+
+```
+import click
+import requests
+
+
+@click.command()
+@click.option("--url", prompt="Link", help="Kontrol etmek istediğiniz bağlantı adresini giriniz.")
+@click.option("--statuscode", default=200, prompt="Status Code", help="Hangi http status kodunu bekliyorsanız onu giriniz.")
+def check(url, statuscode):
+    r = requests.get(url)
+    if r.status_code == statuscode:
+        print("{} sitesi {} kodunu döndü". format(url, statuscode))
+    else:
+        print("{} sitesi için {} kodunu bekliyordunuz ama {} döndü.". format(url, statuscode, r.status_code))
+
+
+check()
+```
+
+Aynı fonksiyon statuscode adında başka bir parametre daha alıyor artık, terminalden çalıştırırken de
+
+```
+--url http://www.sinanerdinc.com --statuscode 200
+```
+şeklinde parametre geçebiliyorum.
