@@ -17,7 +17,7 @@ Terminal üzerinde bir python betiğini çalıştırmak için
 python app.py
 python3 app.py
 ```
-gibi python versiyonunuza göre değişen bir komut kullanıyorsunuz. Bu komutlar sayesinde yazdığınız kodlar çalışıyor ve ekrana birşey yazdırmışsanız, terminalde onları görebiliyorsunuz. Eğer terminalden betiğinize bir parametre göndermek isterseniz o zaman click modülünü kullanabilirsiniz.
+gibi python versiyonunuza göre değişen bir komut kullanıyorsunuz. Bu komutlar sayesinde yazdığınız kodlar çalışıyor ve ekrana birşey yazdırmışsanız, terminalde onları görebiliyorsunuz. Çoğu zaman, yazdığınız fonksiyonlar birer parametre alacak ve bu da betik içerisinden gönderilmiş olacak, fakat sizin ihtiyacınız olan terminalden betiğinize bir parametre göndermek.İşte bu noktada click modülünü bu süreci çok kolaylaştırıyor.
 
 Beraber terminalde çalışan basit bir uygulama yapalım.
 
