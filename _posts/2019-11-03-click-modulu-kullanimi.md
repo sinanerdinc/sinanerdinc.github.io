@@ -72,10 +72,12 @@ ardından bu modülü kullanmak için
 @click.option("--url", default="http://www.sinanerdinc.com", prompt="Link", help="Kontrol etmek istediğiniz bağlantı adresini giriniz.")
 ```
 ekleyebilirsiniz. Biraz burayı açalım,
-**--url** alanı, terminalden vereceğimiz parametrenin önüne yazmamız gereken metni ifade ediyor ve ayrıca python betiğinizde url adında bir değişken oluşturur.
-**default** alanı, eğer terminalden bir parametre göndermezsem, standart olarak bunu kabul et demek.
-**prompt** alanı, eğer terminalden bir parametre göndermezsem ve default özelliğini kullanmamışsam, direkt olarak terminal benden bu prompt alanına yazdığım metni gösterip benden içerisini doldurmamı bekliyor. Yani **input("Link")** kullanmışız gibi.
-**help** alanı, terminalden betiğinizi çalıştırırken --help komutunu kullandığınızda, açıklama olarak istenilen parametreleri ve bu alana yazdığınız metni gösterir. 
+ - **--url** alanı, terminalden vereceğimiz parametrenin önüne yazmamız gereken metni ifade ediyor ve ayrıca python betiğinizde url adında   bir değişken oluşturur.
+  - **default** alanı, eğer terminalden bir parametre göndermezsem, standart olarak bunu kabul et demek.
+  - **prompt** alanı, eğer terminalden bir parametre göndermezsem ve default özelliğini kullanmamışsam, direkt olarak terminal benden bu
+   prompt alanına yazdığım metni gösterip benden içerisini doldurmamı
+   bekliyor. Yani **input("Link")** kullanmışız gibi.
+  - **help** alanı, terminalden betiğinizi çalıştırırken --help komutunu kullandığınızda, açıklama olarak istenilen parametreleri ve bu alana yazdığınız metni gösterir.
 ```
 Options:
   --url TEXT  Kontrol etmek istediğiniz bağlantı adresini giriniz.
