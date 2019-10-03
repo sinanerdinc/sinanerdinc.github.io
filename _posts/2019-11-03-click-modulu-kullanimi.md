@@ -13,7 +13,9 @@ categories:
 
 Python öğrenmeye başladığınızda, bir süre sadece terminal üzerinde çalışan uygulamalar yapacaksınız. Bu uygulamaları küçümsemeyin sakın, terminal aslında gün boyu en çok kullandığımız araçlardan biri. 
 Terminal üzerinde bir python betiğini çalıştırmak için
-**python app.py** veya **python3 app.py** gibi python versiyonunuza göre değişen bir komut kullanıyorsunuz. Bu komutlar sayesinde yazdığınız kodlar çalışıyor ve ekrana birşey yazdırmışsanız, terminalde onları görebiliyorsunuz. Çoğu zaman, yazdığınız fonksiyonlar birer parametre alacak ve bu da betik içerisinden gönderilmiş olacak, fakat sizin ihtiyacınız olan terminalden betiğinize bir parametre göndermek.İşte bu noktada **click modülü** bu süreci çok kolaylaştırıyor.
+**python app.py** veya **python3 app.py** gibi python versiyonunuza göre değişen bir komut kullanıyorsunuz. Bu komutlar sayesinde yazdığınız kodlar çalışıyor ve ekrana birşey yazdırmışsanız, terminalde onları görebiliyorsunuz. 
+
+Çoğu zaman, yazdığınız fonksiyonlar birer parametre alacak ve bu da betik içerisinden gönderilmiş olacak, fakat sizin ihtiyacınız olan terminalden betiğinize bir parametre göndermek.İşte bu noktada **click modülü** bu süreci çok kolaylaştırıyor.
 
 Beraber terminalde çalışan basit bir uygulama yapalım.
 
@@ -68,7 +70,7 @@ ardından bu modülü kullanmak için
 @click.option("--url", default="http://www.sinanerdinc.com", prompt="Link", help="Kontrol etmek istediğiniz bağlantı adresini giriniz.")
 ```
 ekleyebilirsiniz. Biraz burayı açalım,
- - **--url** alanı, terminalden vereceğimiz parametrenin önüne yazmamız gereken metni ifade ediyor ve ayrıca python betiğinizde fonksiyon içerisine url adında bir parametre geçer. Siz bu alana **--name** yazarsanız, fonksiyona **name** adında bir parametre geçer.
+ - **--url** alanı, terminalden vereceğimiz parametrenin önüne yazmamız gereken metni ifade ediyor ve ayrıca python betiğinizde fonksiyon içerisine url adında bir parametre geçer. Mesela siz bu alana **--name** yazarsanız, fonksiyona **name** adında bir parametre geçer.
   - **default** alanı, eğer terminalden bir parametre göndermezsem, standart olarak bunu kabul et demek.
   - **prompt** alanı, eğer terminalden bir parametre göndermezsem ve default özelliğini kullanmamışsam, direkt olarak terminal benden bu prompt alanına yazdığım metni gösterip benden içerisini doldurmamı bekliyor. Yani **input("Link")** kullanmışız gibi.
   - **help** alanı, terminalden betiğinizi çalıştırırken --help komutunu kullandığınızda, açıklama olarak istenilen parametreleri ve bu alana yazdığınız metni gösterir.
