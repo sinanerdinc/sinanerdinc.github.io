@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: Python Click Modülü Kullanımı
-subtitle: Python ile sanal bir geliştirme ortamı kurabilir ve istediğiniz modülleri bilgisayarınızdan bağımsız kullanabilirsiniz.
+subtitle: Terminalden, yazdığınız betik içerisine bir parametre & arguman göndermek için rahatlıkla kullanabileceğiniz bir paket.
 permalink: /python-click-modulu
 image: /img/2019/click-modulu.png
 share-img: /img/2019/click-modulu.png
