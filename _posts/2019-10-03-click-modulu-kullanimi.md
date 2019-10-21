@@ -6,7 +6,7 @@ subtitle: Terminalden, yazdığınız betik içerisine bir parametre & argüman 
 permalink: /python-click-modulu
 image: /img/2019/click-modulu.png
 share-img: /img/2019/click-modulu.png
-date: 2019-11-03
+date: 2019-10-03
 categories:
     - "python"
 ---
