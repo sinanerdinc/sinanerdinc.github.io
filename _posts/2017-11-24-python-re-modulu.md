@@ -172,12 +172,12 @@ Belirli bir sayıda tekrar anlamındadır. Şimdi yukarıda öğrendiklerimiz il
 
 * Adım 1: **[a-z]** ile küçük harf ayrımı yapmamız gerek.
 * Adım 2: **[a-z]*** ile küçük harflerden 1 veya n (sonsuz) kere geçmesini söyledik.
-* Adım 3: **[a-z]*a** ile küçük harf ile başlayıp a ile devam etsin dedik.
-* Adım 4: **[a-z]a{2}** ile a harfinden 2 adet olması gerektiğini belirttik.
-* Adım 5: **[a-z]a{2}t** en son da t ile bitsin dedik.
+* Adım 3: **[a-z]+a** ile küçük harf ile başlayıp a ile devam etsin dedik.
+* Adım 4: **[a-z]+a{2}** ile a harfinden 2 adet olması gerektiğini belirttik.
+* Adım 5: **[a-z]+a{2}t** en son da t ile bitsin dedik.
 
 ```
->>> re.findall("[a-z]*a{2}t","Bence saat tamir etmek zor zanaat.")
+>>> re.findall("[a-z]+a{2}t","Bence saat tamir etmek zor zanaat.")
 ['saat', 'zanaat']
 ```
 
