@@ -5,7 +5,7 @@ title: Python Enum Kütüphanesi Kullanımı
 subtitle: Sınıf içerisindeki değişkenlerin davranışlarını Enum kütüphanesi ile değiştirebilirsiniz.
 permalink: /python-enum-kullanimi
 image: /img/2019/enum.png
-share-img: /img/2019/enum.png
+share-img: /img/2020/enum.png
 date: 2019-01-27
 categories:
     - "python"
