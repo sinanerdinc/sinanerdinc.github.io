@@ -45,13 +45,13 @@ class Status(enum.Enum):
 ```
 şeklinde, Status sınıfı oluştururken, **enum** üzerinden miras alarak kullanabiliriz.
 
-**İkinci Kullanım**
+**İkinci Yöntem**
 
 ```
 Status = Enum("Status", {"active":1, "passive":0})
 ```
 
-şeklinde. Ben ilk kullanımı daha kullanışlı buluyorum.
+şeklinde. Ben ilk yöntemi daha kullanışlı buluyorum.
 
 Şimdi de Enum üzerinden oluşturulan sınıflar için kazanılan bazı yetenekleri sıraladım. Bunları anlatırken de **enum.IntEnum** ve **@enum.unique** kavramlarını izah ettim.
 
