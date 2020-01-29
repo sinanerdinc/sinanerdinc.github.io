@@ -11,11 +11,16 @@ categories:
     - "python"
 ---
 
-Python öğrenmeye başladığınızda, bir süre sadece terminal üzerinde çalışan uygulamalar yapacaksınız. Bu uygulamaları küçümsemeyin sakın, terminal aslında gün boyu en çok kullandığımız araçlardan biri. 
+Python öğrenmeye başladığınızda, bir süre sadece terminal üzerinde çalışan uygulamalar yapacaksınız. Bu uygulamaları küçümsemeyin sakın, terminal aslında gün boyu en çok kullandığımız araçlardan biri.
 Terminal üzerinde bir python betiğini çalıştırmak için
-**python app.py** veya **python3 app.py** gibi python versiyonunuza göre değişen bir komut kullanıyorsunuz. Bu komutlar sayesinde yazdığınız kodlar çalışıyor ve ekrana birşey yazdırmışsanız, terminalde onları görebiliyorsunuz. 
+**python app.py** veya **python3 app.py** gibi python versiyonunuza göre değişen bir komut kullanıyorsunuz. Bu komutlar sayesinde yazdığınız kodlar çalışıyor ve ekrana birşey yazdırmışsanız, terminalde onları görebiliyorsunuz.
 
 Çoğu zaman, yazdığınız fonksiyonlar birer parametre alacak ve bu da betik içerisinden gönderilmiş olacak, fakat sizin ihtiyacınız olan terminalden betiğinize bir parametre göndermek.İşte bu noktada **click modülü** bu süreci çok kolaylaştırıyor.
+
+<div class="youtubeContainer">
+<iframe src="//www.youtube.com/embed/o7Xv-OxYH4w"
+frameborder="0" allowfullscreen class="youtubeVideo"></iframe>
+</div>
 
 Beraber terminalde çalışan basit bir uygulama yapalım.
 
@@ -85,8 +90,8 @@ Genel olarak toparlarsak, python betiğimiz şu hale gelmiş oldu.
 ```
 import click  
 import requests  
-  
-  
+
+
 @click.command()  
 @click.option("--url", prompt="Link", help="Kontrol etmek istediğiniz bağlantı adresini giriniz.")  
 def check(url):  
@@ -95,8 +100,8 @@ def check(url):
         print("Girdiğiniz sayfa açılıyor.")  
     else:  
         print("Böyle bir sayfa bulunamadı.")
-  
-  
+
+
 check()
 ```
 
