@@ -32,6 +32,7 @@ Kullanmayı sevdiğim, tecrübe ettiğim ürün veya araçları şuralarda anlat
 | Robot Framework ve Selenium ile Test Otomasyonuna Giriş | 27.02.2019 | [Robot Framework Turkey](https://www.meetup.com/Robot-Framework-Turkey/events/258785501/)  |
 | İleri Seviye Robot Framework Kullanımı | 10.04.2019 | [Robot Framework Turkey](https://www.meetup.com/Robot-Framework-Turkey/events/260304675/)  |
 | Robot Framework Quick Start and Best Practice | 16.04.2019 | [TestHive](https://www.meetup.com/TestHive/events/260563956/)  |
+| Selenium ve Robot Framework ile UI Test Otomasyonuna Giriş | 19.02.2020 | [Teknopark İstanbul Yazılımcı Buluşmaları](https://www.meetup.com/Teknopark-%C4%B0stanbul-Yaz%C4%B1l%C4%B1mc%C4%B1-Bulu%C5%9Fmalar%C4%B1/events/268624461/)  |
 
 
 ## İletişim
