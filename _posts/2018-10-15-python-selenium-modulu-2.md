@@ -31,7 +31,7 @@ Google Chrome üzerinden anlatalım, websitesine girdiğinizde mouse üzerinden 
 
 Artık üzerinde işlem yapmak istediğim alanın HTML kodlarına ve dolayısı ile seçicilerine ulaşabilirim. Bu seçicilere ulaştıktan sonra geriye yapabileceğimiz işlemlerden bahsetmek kalıyor.
 
-# Kullanabileceğimiz methodlar
+## Kullanabileceğimiz methodlar
 
 ### 1- find_element_by_id()
 

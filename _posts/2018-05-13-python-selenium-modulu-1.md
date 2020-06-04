@@ -58,7 +58,7 @@ Burda dikkat etmeniz gereken şu, bu klasör yolu linux veya windows için deği
 Artık driver objesi içerisinde selenium içindeki methodları kullanabiliriz. Şimdi biraz bu methodları inceleyelim.
 
 
-# Kullanışlı methodlar
+## Kullanışlı methodlar
 
 ### 1- get, title, back, refresh, close, quit
 Bir websitesini açmak istediğinizde get methodu kullanılır.
