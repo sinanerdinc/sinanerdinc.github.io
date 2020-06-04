@@ -11,7 +11,7 @@ layout: base
       <article role="main" class="blog-post">
         {% if page.image %}
         <div class="post-image">
-            <img src="{{ page.image }}" alt="{{ page.title }}" title="{{ page.title }}">
+            <img src="{{ page.image }}" alt="{{ page.title }}" alt="{{ page.title }}">
         </div>
         {% endif %}
         {{ content }}
@@ -34,7 +34,7 @@ layout: base
               Kategoriler:
               {% if site.categories %}
               {% for cat in page.categories %}
-                <a href="/{{ cat }}">{{ cat }}</a>
+                <a href="/{{ cat }}" title="{{ cat }}">{{ cat }}</a>
               {% endfor %}
               {% else %}
                 {{ page.categories | join: ", " }}
