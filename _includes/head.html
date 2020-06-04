@@ -1,9 +1,9 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="ULYKxNI3hNIuEGcjgQEre3EZ8yhCcSS60xoAswP5erY" />
-  <title>{% if page.use-site-title %}{{ site.title }} {{ site.title-separator }} {{ page.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <title>{% if page.use-site-title %}{{ site.title }} {{ site.title-separator }} {{ page.title }} {% if paginator.page != 1 %} - Sayfa {{ paginator.page }} {% endif %} {% elsif page.title %}{{ page.title }} | {{ site.title }} {% else %}{{ site.title }}{% endif %}</title>
   <meta name="author" content="{{ site.author.name }}" />
   {% if page.subtitle %}
   <meta name="description" content="{{ page.subtitle }}">
