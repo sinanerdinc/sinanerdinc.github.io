@@ -11,9 +11,9 @@ categories:
     - "linux"
 ---
 
-Terminalden hemen kurulumunu yapabileceğiniz bu paket ile bilgisayarınızda daha kolay arama yapabileceksiniz. Arama derken de bahsettiğim aslında bir yazılım projenizde birşey aramak. Normalde grep komutu ile yapabileceğiniz işlemleri sizin için daha kolay bir hale getirmiş olan bu eklentiyi biraz inceleyelim. Bu eklentiye Yazılımcı Grep'i diyebiliriz.
+Terminalden hemen kurulumunu yapabileceğiniz bu paket ile bilgisayarınızda daha kolay arama yapabileceksiniz. Arama derken de bahsettiğim aslında bir yazılım projenizde bir şey aramak. Normalde grep komutu ile yapabileceğiniz işlemleri sizin için daha kolay bir hale getirmiş olan bu eklentiyi biraz inceleyelim. Bu eklentiye Yazılımcı Grep'i diyebiliriz.
 
-# Kurulum
+## Kurulum
 
 ```
 sudo apt-get install silversearcher-ag
@@ -22,7 +22,7 @@ sudo apt-get install silversearcher-ag
 komutu ile bilgisayarınıza kurabilirsiniz.
 
 
-# Kullanımı
+## Kullanımı
 Bu eklentiyi ag komutu ile kullanacağız.
 
 ```

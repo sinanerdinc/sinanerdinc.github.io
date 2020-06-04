@@ -11,7 +11,7 @@ categories:
 
 2014 yılından beri Amazon Kindle Paperwhite kullanıcısıyım. Tüm arkadaşlarıma da konusu açılınca tavsiye ediyor hatta neredeyse pazarlamasını ben yapıyorum.
 
-Satın alırken aynı cihazın 2 farklı fiyatı vardı. Bir tanesi reklamsız versiyonu, diğeri ise ***special offers*** altında Amazon’un kitaplarının reklamını yaptığı bir versiyon. (Ben satın alırken arada 20USD fark vardı.) Reklam dediysem abartı birşey değil, kindle kapanınca ana ekranında amazondaki bir kitabın kapağı yer alıyor sadece.
+Satın alırken aynı cihazın 2 farklı fiyatı vardı. Bir tanesi reklamsız versiyonu, diğeri ise ***special offers*** altında Amazon’un kitaplarının reklamını yaptığı bir versiyon. (Ben satın alırken arada 20USD fark vardı.) Reklam dediysem abartı bir şey değil, kindle kapanınca ana ekranında amazondaki bir kitabın kapağı yer alıyor sadece.
 
 Eğer reklamsız versiyonu almak isterseniz küçük bir meblağ daha fazla ödeme yapmanız gerekiyor. Bu reklamın amacı tabii ki yeni çıkan kitaplar ile ilgili bilgi vermek ve ek gelir kapısı sağlamak. Fakat bildiğiniz gibi ülkemize satışı yok Amazon’un. Böyle olunca reklamların da bir amacı da kalmıyor. Bu durumu Amazon yetkilileri ile yaptığım bir canlı destek sisteminde belirttim. Ardından ilgili reklamları ek ücret ödemeden kaldırtabildim.
 

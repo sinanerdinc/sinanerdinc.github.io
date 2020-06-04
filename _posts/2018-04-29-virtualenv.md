@@ -22,7 +22,7 @@ Aslında pycharm kullanıyorsanız buna alışkın olmalısınız. Pycharm size 
 
 Şimdi kendimize yeni bir virtualenv nasıl kurulur onu inceleyelim.
 
-# Kurulum
+## Kurulum
 
 Eğer yüklü değilse ilk önce pip3 yani paket yöneticisini kuralım.
 

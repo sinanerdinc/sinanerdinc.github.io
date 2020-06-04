@@ -14,7 +14,7 @@ Düzenli ifadeler (Regular Expressions) yazılım hayatınızda mutlaka karşın
 
 Düzenli ifadeler tüm modern dillerde bulunur, dağınık bir metin içerisinde istediğimiz formattaki metinleri yakalayabilmemize imkan tanır. Mesela, bir kaynakta geçen tüm e-posta adreslerini veya içinde rakam bulunan ve gmail uzantılı olan mail adreslerini ayıklamak için kullanabilirsiniz. Düzenli ifadeler olmasaydı ardı arkasına birçok if - else yazmak gerekebilirdi. Bu modül, birkaç saatte yapabileceğiniz bir işlemi saniyeler içerisinde sizin yerinize yapabiliyor. Uzmanlaşması biraz vakit alsa da unutması en hızlı modüllerden biri bence.
 
-# Kurulum
+## Kurulum
 Python ile standart olarak gelen bir kütüphanedir. Kurulum gerektirmez.
 
 ```
@@ -23,7 +23,7 @@ import re
 
 şeklinde projeniz içerisine aktardıktan sonra kullanmaya başlayabilirsiniz.
 
-# search
+### search
 Bu method, aranılan bir içeriğin ilgili metin içerisinde olup olmadığını kontrol eder.
 
 ```
@@ -41,7 +41,7 @@ Metin içerisinde geçen Sinan kelimesini arattırdık, dikkat ederseniz span ve
 
 Gördüğünüz gibi tekrar Sinan değeri döndü. Search methodu ilgili metnin nerede olduğunu başarıyla bize söyleyebildi.
 
-## start()
+### start()
 
 Bu method aratılan kelimenin, kaynakta nerede geçtiğini döndürür. Biz zaten yukarıdaki örnekte (12,17) arasında olduğunu biliyoruz. Sadece burdan 12 değerini çekmek istersek kullanabiliriz.
 
@@ -51,7 +51,7 @@ Bu method aratılan kelimenin, kaynakta nerede geçtiğini döndürür. Biz zate
 12
 ```
 
-## end()
+### end()
 
 Üstteki start methodunun tersini yapar, yani aratılan kelime hangi aralıkta geçiyorsa onun son değerini döndürür. Biz kaynakta Sinan kelimesinin (12,17) arasında geçtiğini biliyoruz. Start methodu 12 dönmüştü, end methodu da 17 değerini dönecektir.
 
@@ -61,7 +61,7 @@ Bu method aratılan kelimenin, kaynakta nerede geçtiğini döndürür. Biz zate
 17
 ```
 
-## endpos()
+### endpos()
 Kaynak içerisindeki karakterlerin toplam sayısını döndürür. \n gibi satır atlatma karakterleri de sayılır.
 
 ```
@@ -74,7 +74,7 @@ Kaynak içerisindeki karakterlerin toplam sayısını döndürür. \n gibi satı
 ```
 İlk metin değişkeni içine bir içerik yazdım, sonra içinde sinan geçiyormu diye bakarak sonucu bir kontrol objesine atadım, ardından endpos ile 36 karakter olduğunu gördüm, sonra metin değişkenini 36'ya kadar görüntüledim ve doğruluğunu teyid ettim.
 
-# findall
+### findall
 Bu method ile bir kaynak içerisinde istediğimiz metnin kaç kere geçtiğini inceleyebiliriz.
 
 ```
@@ -89,11 +89,11 @@ Oluşturduğum metin içerisinde **zaman** kelimesi var mı diye sorguladım. Li
 ```
 Bu şekilde 2 kere geçtiğini de görmüş oldum.
 
-# Metakarakterler
+## Metakarakterler
 Bu noktaya kadar bir kaynak içerisinde belirli bir metin aradık, ancak bu modülü güçlü yapan şey bu noktadan sonra anlatacağımız metakarakterlerdir. Bu metakarakterler sayesinde, belirlediğiniz bir düzene uyan metinleri arayabilirsiniz. Mesela sinan metnini aramak yerine, sinan, sunan, sühan, solan gibi belirli bir şablon içerisine giren metinleri de arayabilirsiniz. İşte bunu yapmamızı sağlayan, aranılan metne eklediğimiz bazı özel karakterler var, bu karakterleri inceleyelim.
 
 
-## . Karakteri
+### . Karakteri
 Yeni satır karakteri hariç herhangi tek bir karakterin yerini tutar.
 
 ```
@@ -102,7 +102,7 @@ Yeni satır karakteri hariç herhangi tek bir karakterin yerini tutar.
 ```
 Mesela bu örnek içerisinde zaman ve saman kelimelerini buldu. Çünkü herhangi bir karakter ile başlayıp aman ile devam eden bir şablon belirledik.
 
-## *  Karakteri
+### *  Karakteri
 Bir ifadenin bütün tekrarlanmalarını bulur.
 
 ```
@@ -111,7 +111,7 @@ Bir ifadenin bütün tekrarlanmalarını bulur.
 ```
 g harfinden sonra * koyduk, yani bu g karakteri 0 kere de geçebilir 100 kere de geçebilir. Bu ayrım sadece kendinden önceki harfi kapsıyor. Bu nedenle @mail, @gmail ve @ggggggmail döndü.
 
-## +  Karakteri
+### +  Karakteri
 Kendinden önce gelen karakterin bir veya daha fazla kullanılmasını arar. Üstte yaptığımız * ile ilgili örneği bu sefer + ile yaparsak;
 
 ```
@@ -121,7 +121,7 @@ Kendinden önce gelen karakterin bir veya daha fazla kullanılmasını arar. Üs
 ```
 şeklinde @gmail ve @ggggggmail döner. Çünkü g harfinden sonra + koyarak bu harfin 1 veya daha fazla geçmesi gerektiğini söyledik.
 
-## ?  Karakteri
+### ?  Karakteri
 Kendinden önce gelen karakterin 0 veya 1 kere tekrar etmesini sorgular.
 
 ```
@@ -130,7 +130,7 @@ Kendinden önce gelen karakterin 0 veya 1 kere tekrar etmesini sorgular.
 ```
 Dikkat ettiyseniz @ggggggmail dönmedi çünkü 0 veya 1 kere olmasını sorguladık, 1'den fazla olanlar bu sonuca dahil değil.
 
-## [ ] Karakteri
+### [ ] Karakteri
 Bu köşeli parantezler arasına yazılan bütün karakterler sorgulanır.
 
 ```
@@ -166,7 +166,7 @@ A-Z arasındaki büyük bir harfle başlayan ve sonra **ilal** ile devam edenler
 ```
 Gördüğünüz gibi hiçbir sonuç dönmedi. Çünkü Hilal ve Bilal büyük harfler ile başlıyor.
 
-## { } Karakterleri
+### { } Karakterleri
 
 Belirli bir sayıda tekrar anlamındadır. Şimdi yukarıda öğrendiklerimiz ile birlikte biraz daha karışık bir örnek yapalım. Kaynağımız **Bence saat tamir etmek zor zanaat.** olsun. Burda küçük harflerle başlayan aat ile biten tüm herşeyi yakalamak istedik.
 
@@ -183,7 +183,7 @@ Belirli bir sayıda tekrar anlamındadır. Şimdi yukarıda öğrendiklerimiz il
 
 Bingo!
 
-## ^ Karakteri
+### ^ Karakteri
 İfadenin başlangıcını kontrol eder ve [ ] karakterleri ile birlikte kullanılırsa da **hariç** anlamına gelir.
 
 ```
@@ -226,7 +226,7 @@ for i in liste:
 Peki plakayı daha kısa bir yoldan bulmak isteseydik nasıl bulurduk? Bu da ödev olsun yorum olarak yazarsınız.
 
 
-## $ Karakteri
+### $ Karakteri
 Yukarıda, ^ karakteri ile bir ifadenin başlangıcını kontrol etmiştik, **$ metakarakteri ile de ifadenin sonunu** yani ne ile bittiğini kontrol edebiliyoruz.
 
 ```
@@ -254,7 +254,7 @@ for i in liste:
 ```
 Bu kod parçası da metin içerisinde geçen .com veya .net geçenleri ekrana bastırır.
 
-## \| Karakteri
+### \| Karakteri
 Yukarıda verdiğim örnek içerisinde kullanmıştım, veya anlamına gelir.
 
 ```
@@ -263,10 +263,10 @@ Yukarıda verdiğim örnek içerisinde kullanmıştım, veya anlamına gelir.
 ```
 Kaynaktan siyah veya beyaz metinlerini aldık. Arama yaparken birden fazla değeri kaynak içerisinde bulmayı mümkün kılar.
 
-## ( ) Karakterleri
+### ( ) Karakterleri
 Parantez de yazdığımız kalıpları gruplamak için kullanılır. Matematikteki bölme ve çarpma için öncelik belirlerken kullandığımız parantez gibi düşünebilirsiniz.
 
-## \ Karakteri
+### \ Karakteri
 Kaçış dizisidir. Buraya kadar birçok karakter gördük, mesela bunlardan biri de $ simgesi. Bir ifadenin sonunu kontrol etmek için kullanıyorduk. Ancak bu bir dolar simgesi ve bazen bir para birimi olarak da kaynak içerisinde bulunabilir, ve biz bunları ayıklamak isteriz. Mesela;
 
 ```
@@ -277,10 +277,10 @@ Kaçış dizisidir. Buraya kadar birçok karakter gördük, mesela bunlardan bir
 ```
 0-9 ile başlayan sonra $ ile devam eden bir arama yaptığımızda eğer ters slash koymazsak python bunun özel bir anlam ifade ettiğini zannediyor ve sonuç döndürmüyor. Kaçış karakteri kullandığımızda ise başarıyla fiyatları döndürüyor.
 
-# Meta Sequences
+## Meta Sequences
 Bunu nasıl çevireceğimi bilemedim. Metakarakter gibi ama özel bir anlam ifade eden yapılar var son olarak onlara bakalım.
 
-## \s ve \S İfadesi
+### \s ve \S İfadesi
 Bu ifade kaynaktaki boşluğu yakalar. Büyük harfle yazılan hali ise boşluk haricindekileri yakalar.
 
 ```
@@ -299,7 +299,7 @@ Peki boşluk haricindekileri bulmak isteseydim? Onu da \S ile yapıyorum.
 ['Bil', 'bakalım', 'kaç', 'boşluk', 'var.']
 ```
 
-## \d ve \D İfadesi
+### \d ve \D İfadesi
 Bu ifade kaynaktaki sayıyı yakalar. Büyük harfle yazılan hali ise sayı olmayanları yakalar.
 
 ```
@@ -313,7 +313,7 @@ Başarıyla kaynaktaki sayıları yakaladım. Sayı haricindekileri yakalayalım
 ['Gelirken ', ' kilo yoğurt ve ', ' adet ekmek alırsın.']
 ```
 
-## \w ve \W İfadesi
+### \w ve \W İfadesi
 
 Bu ifade kaynaktaki karakter,sayı ve alt çizgiyi yakalar. Büyük harfle yazılan hali ise tam tersini yani boşluk, nokta, soru işareti, boşluk gibi karakterleri yakalar.
 

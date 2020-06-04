@@ -13,7 +13,7 @@ categories:
 
 Python öğrenmeye başladığınızda, bir süre sadece terminal üzerinde çalışan uygulamalar yapacaksınız. Bu uygulamaları küçümsemeyin sakın, terminal aslında gün boyu en çok kullandığımız araçlardan biri.
 Terminal üzerinde bir python betiğini çalıştırmak için
-**python app.py** veya **python3 app.py** gibi python versiyonunuza göre değişen bir komut kullanıyorsunuz. Bu komutlar sayesinde yazdığınız kodlar çalışıyor ve ekrana birşey yazdırmışsanız, terminalde onları görebiliyorsunuz.
+**python app.py** veya **python3 app.py** gibi python versiyonunuza göre değişen bir komut kullanıyorsunuz. Bu komutlar sayesinde yazdığınız kodlar çalışıyor ve ekrana bir şey yazdırmışsanız, terminalde onları görebiliyorsunuz.
 
 Çoğu zaman, yazdığınız fonksiyonlar birer parametre alacak ve bu da betik içerisinden gönderilmiş olacak, fakat sizin ihtiyacınız olan terminalden betiğinize bir parametre göndermek.İşte bu noktada **click modülü** bu süreci çok kolaylaştırıyor.
 

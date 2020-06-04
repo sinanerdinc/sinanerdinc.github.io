@@ -43,7 +43,7 @@ Artık kodlarımızı yazabiliriz.
 {: .box-note}
 **Not:** Ben örneklerimde [https://www.producthunt.com](https://www.producthunt.com?ref=sinanerdinc.com "https://www.producthunt.com") sitesine bağlanıp burdaki kodları parse ettim.
 
-# Siteye Bağlanma ve Parse İşlemine Hazırlık
+## Siteye Bağlanma ve Parse İşlemine Hazırlık
 ```
 >>> import requests
 >>> from bs4 import BeautifulSoup
@@ -223,10 +223,10 @@ Burda ise bağlantı adresleri içinde href değeri /topics/t ile başlayanları
 
 Buraya kadar HTML ağaç yapısı içerisindeki istediğimiz verileri aldık, şimdi de bu verileri modifiye etmeyi görelim.
 
-# Html Kodlarını Modifiye Etme
+## Html Kodlarını Modifiye Etme
 Bir kaynaktaki html kodun kopyasını aldıktan sonra bu kopyası üzerinde yapabileceğimiz değişikliklere bakalım.
 
-## Bir etiketin id veya class değerini değişirme
+### Bir etiketin id veya class değerini değişirme
 Kaynak içindeki bir li etiketine class veya id değeri atayabilirsiniz. Hemen bir örnek yapalım.
 
 ```
@@ -249,7 +249,7 @@ Burda producthunt sitesindeki soldaki menülerden ilki olan Home değerini çekt
 ```
 Gördüğünüz gibi newId adında bir id ekledim ve **li class="changed" id="newId"** şekline geldi.
 
-## String değerini değiştirmek
+### String değerini değiştirmek
 Şimdi de producthunt sitesindeki soldaki menülerden ilki olan Home değerini Anasayfa olarak değiştirelim.
 
 ```
@@ -274,7 +274,7 @@ Gördüğünüz gibi newId adında bir id ekledim ve **li class="changed" id="ne
 ```
 Anasayfa yazdığını kontrol ettim sonra ise .append("Adresi") ile Anasayfa metninin AnasayfaAdresi olmasını sağladım. Yani append ile bu alandaki metnin yanına ekleme yaptım.
 
-## Yeni bir etiket ekleme ve silme
+### Yeni bir etiket ekleme ve silme
 Seçtiğimiz bir html etiketi içerisine istersek yeni bir etiket daha ekleyebiliriz.
 
 ```
@@ -311,7 +311,7 @@ Peki metni değil de etiket ve içindekileri komple silmek isteseydik?
 ```
 O zaman da decompose() methodunu uygulamamız gerek, ben uyguladım sonra tekrar b etiketini sorguladım herhang birşey dönmedi. Yani sildi.
 
-# Çıktı Formatları
+## Çıktı Formatları
 BeautifulSoup html kodlarının çıktısını alırken kullanılmak üzere güzel methodlar barındırır. Hemen inceleyelim;
 
 ```

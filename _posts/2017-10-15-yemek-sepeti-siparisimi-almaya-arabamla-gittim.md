@@ -49,4 +49,4 @@ Mahalle arasındaki bir yerden sipariş verdiğinizde kurye tabiri caiz ise kar�
 
 Farklı mahalle ve semtlere sipariş teslim ediyorsanız, kuryeleriniz de sürekli yenileri ile değişiyor ise, o arkadaşın kullanabileceği, internete giren, beni şuraya götür dediğinde götürecek bir cihazı ( içinde yüklü bir harita + gps olsa yeterli. ) cebine sokuşturmanız gerekiyor.
 
-Konunun Yemek Sepeti ile direkt ilgisi olmasa da, anlaşma yapacağı restoranlarda kurye kalitesi ve teknik donanımı konusunda bazı alt limitler belirleyebilir. Belki de böyle birşey var ve ona uyulmadı bilemiyorum.
+Konunun Yemek Sepeti ile direkt ilgisi olmasa da, anlaşma yapacağı restoranlarda kurye kalitesi ve teknik donanımı konusunda bazı alt limitler belirleyebilir. Belki de böyle bir şey var ve ona uyulmadı bilemiyorum.

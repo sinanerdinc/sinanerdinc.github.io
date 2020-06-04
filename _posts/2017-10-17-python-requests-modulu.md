@@ -45,7 +45,7 @@ diyerek aktaralım. Şimdi de bu güzel modülün özelliklerine geçelim.
 {: .box-note}
 **Not:** Bütün örneklerde http://httpbin.org/ adresini kullanacağım, bu adres HTTP isteği yapıp cevap alabileceğiniz bir servis.
 
-# HTTP İstekleri
+## HTTP İstekleri
 ```
 >>> r = requests.get('http://httpbin.org/get')
 >>> r = requests.post('http://httpbin.org/post')
@@ -54,7 +54,7 @@ diyerek aktaralım. Şimdi de bu güzel modülün özelliklerine geçelim.
 ```
 Bu şekilde istekler gönderebiliyoruz.  Elbette ki istek göndermek ile olmuyor, parametre gönderme ihtiyacı var. Şimdi istek atarken nasıl parametre gönderebileceğimize bakalım.
 
-# Parametre Göndermek
+## Parametre Göndermek
 Parametre göndermek için params sözlüğünü kullanıyoruz. Hemen bir örnek verelim.
 
 ```
@@ -131,7 +131,7 @@ Burada bir parantez açalım, REST API ile çalışıyorsak, farklı endpointler
 200
 ```
 
-# Özel Header Kullanımı
+## Özel Header Kullanımı
 İstek atarken, headers parametresi ile sözlük formatında istediğiniz bilgileri girebilirsiniz.
 
 ```
@@ -141,7 +141,7 @@ Burada bir parantez açalım, REST API ile çalışıyorsak, farklı endpointler
 ```
 Bu örnek içerisinde headers parametresi ile özel bir user-agent değeri göndermiş oldum. **status_code** methodu ile de isteğe dönen durum kodunu kontrol ettim. Benim örneğimde 200 gelmiş, yani başarılı.
 
-# İstek attıktan sonra kullanılan methodlar
+## İstek attıktan sonra kullanılan methodlar
 Tüm örneklerde bir r değişkenine aktarmıştık attığımız tüm istekleri, şimdi bu r değişkeni içinde yani requests modülü içindeki istek attıktan sonra kullanabileceğimiz methodları inceleyelim.
 
 ### text

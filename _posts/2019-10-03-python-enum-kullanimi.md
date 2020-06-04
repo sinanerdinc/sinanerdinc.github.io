@@ -121,7 +121,7 @@ yazmış olsaydım da kendisi bunu integer olarak çevirecekti fakat
 new="Status2"
 ```
 
-gibi çeviremeyeceği birşey yazılırsa ve sınıf **IntEnum** üzerinden oluşturulmuşsa o zaman hata alacaktım.
+gibi çeviremeyeceği bir şey yazılırsa ve sınıf **IntEnum** üzerinden oluşturulmuşsa o zaman hata alacaktım.
 
 ### 3- Benzersizlik
 Normalde bir sınıf içerisindeki değişkenler aynı değerlere sahip olabilir, ancak siz 2 değişken aynı değere sahip olmasın isterseniz bunun için de **Enum** kütüphanesi içerisinde **@enum.unique** adında bir decorator var.

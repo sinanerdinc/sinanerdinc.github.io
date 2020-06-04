@@ -15,7 +15,7 @@ Python Requests ve BeautifulSoup modüllerini kullanarak bot yazabilir, bir web 
 
 Videolar kolaydan zora doğru gidiyor, her video içeriğinde farklı methodlar kullanmaya, alışılmadık problemler çözmeye çalıştım.
 
-# Örnek 1
+## Örnek 1
 
 {: .box-note}
 Site: http://steamsales.rhekua.com/
@@ -32,7 +32,7 @@ Bu örnek içerisinde stem üzerindeki indirimlerin olduğu websitesine bağland
 Kodlar: https://github.com/sinanerdinc/ParseHtml/blob/master/steam.py
 
 
-# Örnek 2
+## Örnek 2
 
 {: .box-note}
 Site: https://boxofficeturkiye.com/hafta/?yil=2018&hafta=7
@@ -49,7 +49,7 @@ Bu örnek içerisinde boxofficeturkiye sitesine bağlandım, son çıkan filmler
 Kodlar: https://github.com/sinanerdinc/ParseHtml/blob/master/boxoffice.py
 
 
-# Örnek 3
+## Örnek 3
 
 {: .box-note}
 Site: https://www.python.org/jobs
@@ -66,7 +66,7 @@ Bu örnek içerisinde python resmi sitesine bağlandım, burdaki güncel iş ila
 Kodlar: https://github.com/sinanerdinc/ParseHtml/blob/master/pythonJobs.py
 
 
-# Örnek 4
+## Örnek 4
 
 {: .box-note}
 Site: https://www.n11.com

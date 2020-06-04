@@ -46,7 +46,7 @@ driver = webdriver.Chrome()
 driver.find_element_by_id("mousehover")
 ```
 
-Bu şekilde id değeri **mousehover** olan alanı seçmiş olduk. Seçtik ama herhangi birşey olmadı. Ekrana birşey yazmadım, tıklamadım v.s. Merak etmeyin seçtikten sonra yapabileceğimiz işlemlerden de bahsedeceğim. Şuan sadece seçme işlemini yapıyoruz. Ancak doğru değeri seçip seçmediğimizi anlamak için dilerseniz **text** methodunu kullanalım. Bu bize seçtiğimiz alan içerisindeki metni verir.
+Bu şekilde id değeri **mousehover** olan alanı seçmiş olduk. Seçtik ama herhangi bir şey olmadı. Ekrana birşey yazmadım, tıklamadım v.s. Merak etmeyin seçtikten sonra yapabileceğimiz işlemlerden de bahsedeceğim. Şuan sadece seçme işlemini yapıyoruz. Ancak doğru değeri seçip seçmediğimizi anlamak için dilerseniz **text** methodunu kullanalım. Bu bize seçtiğimiz alan içerisindeki metni verir.
 
 ```
 driver.find_element_by_id("mousehover").text
