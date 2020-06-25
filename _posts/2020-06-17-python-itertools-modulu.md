@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: Python Itertools Modülü
-subtitle: Tekrarlanan, yinelenen veriler için hızlı, belleği verimli kullanan fonksiyonlar sunan bir modüldür.
+subtitle: Tekrarlanan, yinelenen veriler için hızlı, belleği verimli kullanan fonksiyonlar sunan bir modül olan itertools modülünün kullanımını öğrenelim.
 permalink: /python-itertools-modulu
 image: /img/2020/itertools.jpg
 share-img: /img/2020/itertools.jpg
