@@ -21,9 +21,14 @@ Bazı içerikler video da barındırıyor. Bu içeriklerin yanında <i class="fa
 <li><a href="/python-pyautogui-modulu-kullanimi" target="_blank" title="python pyautogui modülü kullanımı">Python Pyautogui Modülü</a></li>
 <li><i class="fa fa-play-circle fa-spin fa-1x fa-fw"></i> <a href="/python-selenium-modulu-kullanimi-1" target="_blank" title="python selenium modülü kullanımı ders 1">Python Selenium Modülü Ders 1</a></li>
 <li><i class="fa fa-play-circle fa-spin fa-1x fa-fw"></i> <a href="/python-selenium-modulu-kullanimi-2" target="_blank" title="python selenium modülü kullanımı ders 2">Python Selenium Modülü Ders 2</a></li>
+<li><i class="fa fa-play-circle fa-spin fa-1x fa-fw"></i> <a href="/python-click-modulu" target="_blank" title="Python Click Modülü Kullanımı">Python Click Modülü Kullanımı</a></li>
 
 </div>
 <div class="col-lg-6">
 <h2>Python Dersleri</h2>
 <li><a href="/python-virtualenv-kullanimi" title="Python Virtualenv Kullanımı" target="_blank">Python Virtualenv Kullanımı</a></li>
+<li><a href="/python-enum-kullanimi" title="Python Enum Kütüphanesi Kullanımı" target="_blank">Python Enum Kütüphanesi Kullanımı</a></li>
+<li><a href="/python-abc-modulu-kullanimi" title="Python ABC Modülü Kullanımı" target="_blank">Python ABC Modülü Kullanımı</a></li>
+<li><a href="/python-map-zip-reduce-filter-kullanimi" title="Map, Zip, Reduce ve Filter Fonksiyonları" target="_blank">Map, Zip, Reduce ve Filter Fonksiyonları</a></li>
+<li><a href="/python-itertools-modulu" title="Python Itertools Modülü" target="_blank">Python Itertools Modülü</a></li>
 </div>
