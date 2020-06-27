@@ -245,7 +245,8 @@ for k in itt.repeat("Hello",2):
     Hello
 
 ## zip_longest
-Bu fonksiyonu anlatmadan önce aslında **zip()** fonksiyonunu anlatmak gerek.
+Bu fonksiyonu anlatmadan önce aslında **zip()** fonksiyonunu anlatmak gerek. Detaylı olarak bu fonksiyonu [şurada](https://www.sinanerdinc.com/python-map-zip-reduce-filter-kullanimi "şurada") yazmıştım. Yine de kısaca bahsedelim.
+
 Şöyle bir hikaye uyduralım, İstanbul'da yağmur yağmış. Sizin elinizde de 4 adet ilçe ve oralara m2 başına kaç kg yağmur düştüğünün verisi olsun.
 
 ```python
