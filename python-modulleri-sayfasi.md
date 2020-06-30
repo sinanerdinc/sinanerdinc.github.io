@@ -27,7 +27,7 @@ Bazı içerikler video da barındırıyor. Bu içeriklerin yanında <i class="fa
 <div class="col-lg-6">
 <h2>Python Dersleri</h2>
 <li><a href="/python-virtualenv-kullanimi" title="Python Virtualenv Kullanımı" target="_blank">Python Virtualenv Kullanımı</a></li>
-<li><a href="/python-enum-kullanimi" title="Python Enum Kütüphanesi Kullanımı" target="_blank">Python Enum Kütüphanesi Kullanımı</a></li>
+<li><i class="fa fa-play-circle fa-spin fa-1x fa-fw"></i> <a href="/python-enum-kullanimi" title="Python Enum Kütüphanesi Kullanımı" target="_blank">Python Enum Kütüphanesi Kullanımı</a></li>
 <li><a href="/python-abc-modulu-kullanimi" title="Python ABC Modülü Kullanımı" target="_blank">Python ABC Modülü Kullanımı</a></li>
 <li><a href="/python-map-zip-reduce-filter-kullanimi" title="Map, Zip, Reduce ve Filter Fonksiyonları" target="_blank">Map, Zip, Reduce ve Filter Fonksiyonları</a></li>
 <li><a href="/python-itertools-modulu" title="Python Itertools Modülü" target="_blank">Python Itertools Modülü</a></li>
