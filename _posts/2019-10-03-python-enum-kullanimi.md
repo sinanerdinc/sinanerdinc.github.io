@@ -15,6 +15,11 @@ Python scriptleri geliştirken bol bol değişken kullanıyoruz. Enum kütüphan
 ## Kurulum
 Python 3.4 üzerinden itibaren kullanabileceğiniz, [PEP 435](https://www.python.org/dev/peps/pep-0435/) ile eklenen standart bir kütüphanedir. Daha düşük bir versiyon kullanmıyorsanız herhangi bir kurulum gerektirmez.
 
+<div class="youtubeContainer">
+<iframe src="//www.youtube.com/embed/NPp5n3ClGPQ"
+frameborder="0" allowfullscreen class="youtubeVideo"></iframe>
+</div>
+
 ## Ne zaman kullanılabilir?
 Örneklere başlamadan önce ne zaman **Enum** kullanmalısınız, onunla ilgili konuşalım.
 
