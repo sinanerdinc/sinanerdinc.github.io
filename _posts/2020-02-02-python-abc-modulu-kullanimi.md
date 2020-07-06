@@ -14,6 +14,10 @@ Bu ders içerisinde, soyut temel sınıfların avantajlarını ve bunları Pytho
 
 ABC modülü Abstract Base Class kelimelerinin baş harflerinden türetilmiştir. Ne işe yaradığını anlatmaya başlamadan önce, bu yaklaşımın dile bizzat Guido van Rossum tarafından eklendiğini, kullanmanın bir zorunluluk olmadığını ancak herşeyin bir obje olduğu Python dilinde bu tür yaklaşımları kullanmanın, sürdürebilir, bakımı kolay sistemler tasarlamakta çok faydalı olacağını söylemek gerekir.
 
+<div class="youtubeContainer">
+<iframe src="//www.youtube.com/embed/LfUivJ_kU1k" frameborder="0" allowfullscreen="" class="youtubeVideo"></iframe>
+</div>
+
 Abstract Base Class yaklaşımı, bir işlemi yapan tek bir sınıf oluşturarak, bu işlemi yapmak isteyen diğer sınıfların kendisinden miras alınmasını ister. Oluşturulan bu tek sınıf, diğerlerine hangi methodları oluşturması konusunda bir yol haritası çizer, herhangi bir implementasyon barındırmaz. Tüm işlemler, miras aldıktan sonra yeni oluşturulan sınıf içerisinde yapılmalıdır.
 
 Bu tür yaklaşımlar da rahatlıkla sisteme yeni bir servis entegre etmeyi kolaylaştırır ve bunu yaparken de sizin doğru yolda ilerlemenize yardımcı olur.
