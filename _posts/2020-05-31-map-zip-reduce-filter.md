@@ -14,8 +14,6 @@ Python scriptleri yazmaya başladığınızda, özellikle for döngüleri ve lis
 Elindeki listeyi bir döngüye sok, her bir itetasyonda şunları kontrol et sonra onu yeni bir listeye append ederek o yeni listeyi döndür. Bu yaklaşım en sık kullanılan ve ilk akla gelen yöntem
 fakat aslında bu tür yaklaşımlarda bizim işimizi çözebilecek çok iyi hazır fonksiyonlar var. 
 
-<iframe src="//www.youtube.com/embed/1TXEyV19Kc4" frameborder="0" allowfullscreen class="youtubeVideo"></iframe>
-
 Bugun bu fonksiyonlardan sırasıyla
 
 - map()
