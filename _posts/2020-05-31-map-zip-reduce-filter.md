@@ -24,6 +24,10 @@ Bugun bu fonksiyonlardan sırasıyla
 üzerinde durmak istiyorum. Eminim ki bu fonksiyonları kesin bir yerlerde görmüşsünüzdür, blog yazısında, github reposunda veya youtube üzerinde bir eğitim izlerken.
 Şimdi bu şahane fonksiyonların beraber detaylarını inceleyelim.
 
+<div class="youtubeContainer">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1TXEyV19Kc4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## Map()
 **map(func, iter1)** şeklinde kullanılır. Yani elinizdeki bir fonksiyona, elinizdeki bir datanın elemanlarını sırasıyla gönderir
 ve sonucu tek bir obje olarak geri döner. Ben aşağıdaki örneklerde hep liste kullandım iterasyona sokulabileceği için ama veri tipi
