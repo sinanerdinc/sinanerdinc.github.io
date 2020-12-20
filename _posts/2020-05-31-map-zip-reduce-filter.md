@@ -25,7 +25,7 @@ Bugun bu fonksiyonlardan sırasıyla
 Şimdi bu şahane fonksiyonların beraber detaylarını inceleyelim.
 
 <div class="youtubeContainer">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1TXEyV19Kc4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/1TXEyV19Kc4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtubeVideo"></iframe>
 </div>
 
 ## Map()
