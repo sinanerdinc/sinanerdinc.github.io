@@ -7,7 +7,7 @@ permalink: hakkimda.html
 
 Selam, ben Sinan Erdinç.
 
-Trendyol'da çalışan, özellikle e-ticaret tabanlı web uygulama geliştirme alanında 7+ yıllık tecrübeye sahip, yazılımın yaşam döngüsünündeki tüm parametrelere hakim, hiperaktif ve aşırı üretken ekiplerle çalışmada tutkulu bir Test Otomasyon Mühendisiyim.
+BtcTurk'de QA Lead olarak çalışan, özellikle e-ticaret tabanlı web uygulama geliştirme alanında 10+ yıllık tecrübeye sahip, yazılımın yaşam döngüsünündeki tüm parametrelere hakim, hiperaktif ve aşırı üretken ekiplerle çalışmada tutkulu bir mühendisim.
 
 
 ## İlgi Alanlarım
@@ -15,7 +15,6 @@ Trendyol'da çalışan, özellikle e-ticaret tabanlı web uygulama geliştirme a
 
 - [Python Dersleri ve Modülleri](/python-dersleri-ve-modulleri "Python Dersleri ve Modülleri")
 - Linux
-- Php
 - Geliştirici Araçları
 - Eticaret
 - Teknoloji
@@ -32,7 +31,8 @@ Kullanmayı sevdiğim, tecrübe ettiğim ürün veya araçları şuralarda anlat
 | Robot Framework ve Selenium ile Test Otomasyonuna Giriş | 27.02.2019 | [Robot Framework Turkey](https://www.meetup.com/Robot-Framework-Turkey/events/258785501/)  |
 | İleri Seviye Robot Framework Kullanımı | 10.04.2019 | [Robot Framework Turkey](https://www.meetup.com/Robot-Framework-Turkey/events/260304675/)  |
 | Robot Framework Quick Start and Best Practice | 16.04.2019 | [TestHive](https://www.meetup.com/TestHive/events/260563956/)  |
-| Selenium ve Robot Framework ile UI Test Otomasyonuna Giriş | 19.02.2020 | [Teknopark İstanbul Yazılımcı Buluşmaları](https://www.meetup.com/Teknopark-%C4%B0stanbul-Yaz%C4%B1l%C4%B1mc%C4%B1-Bulu%C5%9Fmalar%C4%B1/events/268624461/)  |
+| Selenium ve Robot Framework ile UI Test Otomasyonuna Giriş | 19.02.2020 | [Teknopark İstanbul Yazılımcı Buluşmaları](https://kommunity.com/teknopark-istanbul-yazilimci-bulusmalari/events/selenium-ve-robot-framework-ile-ui-test-otomasyonuna-giris-d463fc81)  |
+| Robot Framework ile İleri Seviye Test Otomasyonu | 19.08.2020 | [Teknopark İstanbul Yazılımcı Buluşmaları](https://kommunity.com/teknopark-istanbul-yazilimci-bulusmalari/events/robot-framework-ile-ileri-seviye-test-otomasyonu-ef2662a2)  |
 
 
 ## İletişim
