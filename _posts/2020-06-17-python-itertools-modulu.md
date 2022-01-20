@@ -72,6 +72,13 @@ Görüldüğü üzere **count** fonksiyonuna 3 ve -1 değerlerini parametre olar
 
 Eğer next fonksiyonu ile sonraki elemanı ekrana yazmaya devam edersem azalmaya devam edecektir.
 
+{: .box-note}
+Yukarıda anlattığım cycle ve count hakkında hazırladığım videoyu izleyebilirsiniz.
+
+<div class="youtubeContainer">
+<iframe src="//www.youtube.com/embed/uYgwJAhXMBM"
+frameborder="0" allowfullscreen class="youtubeVideo"></iframe>
+</div>
 
 ## accumulate
 Döngü içerisindeki tüm elemanları üst üste yığa yığa ilerler. 2 parametre alır, birincisi döngüye sokmak istenen veri, ikincisi de hangi fonksiyonu kullanarak yığma işlemi yapacağıdır.
@@ -122,6 +129,14 @@ k1 + k2
 şeklinde yapabiliyorum, o zaman chain() fonksiyonu farklı ne? Normalde iki listeyi toplar gibi birleştirdiğinizde sonuç yeni bir liste olur. 
 Ancak chain() ile birleştirdiğinizde bu bir iterator olan chain objesidir ve yeni bir liste oluşturmadan var olan listeleri birleştirip döngüye sokabileceğiniz bir hale getirir. 
 Büyük verilerde hayat kurtarabilir.
+
+{: .box-note}
+Yukarıda anlattığım **accumulate** ve **chain** hakkında hazırladığım videoyu izleyebilirsiniz.
+
+<div class="youtubeContainer">
+<iframe src="//www.youtube.com/embed/543gImzq7I8"
+frameborder="0" allowfullscreen class="youtubeVideo"></iframe>
+</div>
 
 ## dropwhile, takewhile
 Bu 2 fonksiyon, kendilerine gönderilen bir liste tipindeki bilgiyi alır, yine kendilerine gönderilen bir fonksiyondan geçirir, dönen değerin **True** veya **False** olmasına göre ise farklı şekilde davranır. Bu 2 fonksiyon biraz map ve filter ile karıştırılabilir ama küçük farkları var.
@@ -178,6 +193,14 @@ print(list(itt.dropwhile(p_filter, passwords)))
 İlk önce şifre içerisinde **12** geçmesi ile ilgili bir fonksiyon yazdım. Sonrasında ise **takewhile** fonksiyonunu kullandım. Bu bana içerisinde 12 geçmeyen ilk şifreye bulana kadar içerisinde 12 geçen şifreleri döndü.
 Ardından **dropwhile** fonksiyonunu kullandım ve içerisinde 12 geçen şifreleri atlayarak, ilk kez 12 geçmeyen şifreye gelince kalanlarını bana döndürdü.
 Bu arada takewhile ve dropwhile sonucunda dönen elemanların toplamının listenin kendisini verdiğine dikkat edin.
+
+{: .box-note}
+Yukarıda anlattığım **dropwhile** ve **takewhile** hakkında hazırladığım videoyu izleyebilirsiniz.
+
+<div class="youtubeContainer">
+<iframe src="//www.youtube.com/embed/nUkw3ImXxiA"
+frameborder="0" allowfullscreen class="youtubeVideo"></iframe>
+</div>
 
 ## groupby
 Bir liste içindeki elemanları, belirlediğimiz bir fonksiyonun sonucuna göre gruplar
@@ -241,8 +264,18 @@ for k in itt.repeat("Hello",2):
     print(k)
 ```
 
-    Hello
-    Hello
+```python
+Hello
+Hello
+```
+
+{: .box-note}
+Yukarıda anlattığım **groupby** ve **repeat** hakkında hazırladığım videoyu izleyebilirsiniz.
+
+<div class="youtubeContainer">
+<iframe src="//www.youtube.com/embed/UctO4hqUEZU"
+frameborder="0" allowfullscreen class="youtubeVideo"></iframe>
+</div>
 
 ## zip_longest
 Bu fonksiyonu anlatmadan önce aslında **zip()** fonksiyonunu anlatmak gerek. Detaylı olarak bu fonksiyonu [şurada](https://www.sinanerdinc.com/python-map-zip-reduce-filter-kullanimi "Map, Zip, Reduce ve Filter Fonksiyonları") yazmıştım. Yine de kısaca bahsedelim.
@@ -297,6 +330,14 @@ a1[3:5]
 Eğer köşeli parantezler ile bir aralık verirsem bu bana yeni bir liste oluşturur ancak islice() kullanırsam dönen sonuç bir iterator olan islice objesidir ve döngüye sokabilirsiniz. Elinizdeki veri büyük ise kullanışlı olacaktır.
 
 
+{: .box-note}
+Yukarıda anlattığım **zip_longest** ve **islice** hakkında hazırladığım videoyu izleyebilirsiniz.
+
+<div class="youtubeContainer">
+<iframe src="//www.youtube.com/embed/Tm_37Sk8QkA"
+frameborder="0" allowfullscreen class="youtubeVideo"></iframe>
+</div>
+
 ## filterfalse
 
 Bir fonksiyona geçtiğimiz parametre eğer False dönüyorsa, filterFalse bunları yakalayarak bize geri dönüyor. Hemen bir örnek yapalım.
@@ -311,3 +352,34 @@ list(itt.filterfalse(lambda x:x <= 3, a1))
 [4, 5]
 ```
 Normalde lambda fonksiyonu içerisinde  **x <= 3** yapıyorum yani 3 ve 3'den küçük olanlar için True dön dedik. Yani 4 ve 5 için False dönüyor, filterfalse fonksiyonu da işte bu False dönenleri yakaladı.
+
+## compress
+Verilen listeleri birleştirerek, bu birleştirme esnasında sadece **True** olanları kullanan bir method.
+
+```python
+d1 = ["Kadıköy", "Beşiktaş", "Sarıyer"]
+d2 = [True, False, False]
+
+r1 = itt.compress(d1, d2)
+print(list(r1))
+
+['Kadıköy']
+
+d2 = [True, False, True]
+r1 = itt.compress(d1, d2)
+print(list(r1))
+
+['Kadıköy', 'Sarıyer']
+```
+
+Burada d1 ve d2 listelerini compress ile birleştirdik fakat bu esnada d2 içerisinde d1'in karşılığı olarak sadece True olanları
+ birleştirdi bu nedenle ilk örnekte Kadıköy döndü sadece. Sonra d2 içerisinde Sarıyer'in karşılığı olarak True yazdık ve 
+tekrar compress methodundan geçirdiğimizde bu sefer Kadıköy ve Sarıyer döndü.
+
+{: .box-note}
+Yukarıda anlattığım **filterfalse** ve **compress** hakkında hazırladığım videoyu izleyebilirsiniz.
+
+<div class="youtubeContainer">
+<iframe src="//www.youtube.com/embed/U_sOgKDtB9M"
+frameborder="0" allowfullscreen class="youtubeVideo"></iframe>
+</div>
