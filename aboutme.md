@@ -35,6 +35,7 @@ Kullanmayı sevdiğim, tecrübe ettiğim ürün veya araçları şuralarda anlat
 | Robot Framework ile İleri Seviye Test Otomasyonu | 19.08.2020 | [Teknopark İstanbul Yazılımcı Buluşmaları](https://kommunity.com/teknopark-istanbul-yazilimci-bulusmalari/events/robot-framework-ile-ileri-seviye-test-otomasyonu-ef2662a2)  |
 | Supercharged Load Testing With Locust  | 12.01.2022 | [Ankara Testing Days 13th](https://www.youtube.com/watch?v=aqC0wchd7UE)  |
 | Sinan Erdinç - Simpler, Faster Automation with Robot Framework | 17.05.2022 | [Ankara Testing Days 14th](https://www.youtube.com/watch?v=qsKR7uDMk4o)  |
+| Locust Adventures: Exploring Your App's Performance | 09.01.2024 | [Bursa Bilişim Topluluğu](https://www.youtube.com/watch?v=HIiFzz-LayU)  |
 
 ## İletişim
 
