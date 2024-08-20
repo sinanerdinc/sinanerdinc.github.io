@@ -37,7 +37,7 @@ Kullanmayı sevdiğim, tecrübe ettiğim ürün veya araçları şuralarda anlat
 | Sinan Erdinç - Simpler, Faster Automation with Robot Framework | 17.05.2022 | [Ankara Testing Days 14th](https://www.youtube.com/watch?v=qsKR7uDMk4o)  |
 | Locust Adventures: Exploring Your App's Performance | 09.01.2024 | [Bursa Bilişim Topluluğu](https://www.youtube.com/watch?v=HIiFzz-LayU)  |
 | Designing Effective Test Cases for Rest APIs | 27.02.2024 | [Kommunity QA Talks](https://kommunity.com/qa-talks/events/designing-effective-test-cases-for-rest-apis-2f1c849b)  |
-| Mobile Service Stress Testing Made Easy | 27.04.2024 | [Devnot Mobil Yazılım Konferansı](https://mobile.devnot.com/)  |
+| Mobile Service Stress Testing Made Easy | 27.04.2024 | [Devnot Mobil Yazılım Konferansı](https://kommunity.com/devnot/events/mobil-yazilim-konferansi-2024-75b70b76)  |
 
 ## İletişim
 
