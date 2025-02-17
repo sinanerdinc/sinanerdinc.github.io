@@ -38,6 +38,7 @@ Kullanmayı sevdiğim, tecrübe ettiğim ürün veya araçları şuralarda anlat
 | Locust Adventures: Exploring Your App's Performance | 09.01.2024 | [Bursa Bilişim Topluluğu](https://www.youtube.com/watch?v=HIiFzz-LayU)  |
 | Designing Effective Test Cases for Rest APIs | 27.02.2024 | [Kommunity QA Talks](https://kommunity.com/qa-talks/events/designing-effective-test-cases-for-rest-apis-2f1c849b)  |
 | Mobile Service Stress Testing Made Easy | 27.04.2024 | [Devnot Mobil Yazılım Konferansı](https://kommunity.com/devnot/events/mobil-yazilim-konferansi-2024-75b70b76)  |
+| Webscraping 101 | 13.02.2025 | [Komünite](https://x.com/komunitecomtr/status/1890296391152595015)  |
 
 ## İletişim
 
