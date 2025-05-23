@@ -39,6 +39,7 @@ Kullanmayı sevdiğim, tecrübe ettiğim ürün veya araçları şuralarda anlat
 | Designing Effective Test Cases for Rest APIs | 27.02.2024 | [Kommunity QA Talks](https://kommunity.com/qa-talks/events/designing-effective-test-cases-for-rest-apis-2f1c849b)  |
 | Mobile Service Stress Testing Made Easy | 27.04.2024 | [Devnot Mobil Yazılım Konferansı](https://kommunity.com/devnot/events/mobil-yazilim-konferansi-2024-75b70b76)  |
 | Webscraping 101 | 13.02.2025 | [Komünite](https://x.com/komunitecomtr/status/1890296391152595015)  |
+| What We Forgot to Test: Rethinking REST API Quality | 02.06.2025 | [Kommunity QA Talks](https://kommunity.com/qa-talks/events/what-we-forgot-to-test-rethinking-rest-api-quality-sinan-erdinc-435b5ff7)  |
 
 ## İletişim
 
